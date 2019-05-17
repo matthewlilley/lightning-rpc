@@ -1,0 +1,38 @@
+{
+  "name": "lightning-rpc",
+  "version": "0.6.1-beta",
+  "description": "Typescript friendly Lightning RPC client.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clear && tsc",
+    "examples": "ts-node ./examples",
+    "clear": "rm -rf ./dist && mkdir ./dist",
+    "dev": "tsc -w",
+    "generate": "./generate.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lightning",
+    "rpc"
+  ],
+  "author": "Matthew Lilley <hello@matthewlilley.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.1",
+    "debug": "^4.1.1",
+    "google-protobuf": "^3.8.0",
+    "grpc": "^1.21.1",
+    "protobufjs": "^6.8.8"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.4",
+    "@types/google-protobuf": "^3.2.7",
+    "@types/node": "^12.0.4",
+    "dotenv": "^8.0.0",
+    "grpc-tools": "^1.7.3",
+    "grpc_tools_node_protoc_ts": "^2.5.1",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.4.5"
+  }
+}

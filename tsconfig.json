@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./dist",
+    "strict": true,
+    // "types": ["node"],
+    "skipLibCheck": false,
+    "noEmit": false,
+    "noEmitOnError": false,
+    "moduleResolution": "node",
+    "stripInternal": true,
+    "pretty": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["dom", "es5", "es2017"]
+  },
+  "include": ["src"],
+  "exclude": ["generated", "dist"]
+}
