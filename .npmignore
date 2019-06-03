@@ -1,5 +1,8 @@
 src
 proto
 examples
+.editorconfig
+.prettierignore
+.prettierrc
 generate.sh
 tsconfig.json
