@@ -1,0 +1,936 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ILightningServer | lightning-rpc - v1.0.0</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">lightning-rpc - v1.0.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="ilightningserver.html">ILightningServer</a>
+				</li>
+			</ul>
+			<h1>Interface ILightningServer</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ILightningServer</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#abandonchannel" class="tsd-kind-icon">abandon<wbr>Channel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#addinvoice" class="tsd-kind-icon">add<wbr>Invoice</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#bakemacaroon" class="tsd-kind-icon">bake<wbr>Macaroon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#channelacceptor" class="tsd-kind-icon">channel<wbr>Acceptor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#channelbalance" class="tsd-kind-icon">channel<wbr>Balance</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#closechannel" class="tsd-kind-icon">close<wbr>Channel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#closedchannels" class="tsd-kind-icon">closed<wbr>Channels</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#connectpeer" class="tsd-kind-icon">connect<wbr>Peer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#debuglevel" class="tsd-kind-icon">debug<wbr>Level</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#decodepayreq" class="tsd-kind-icon">decode<wbr>Pay<wbr>Req</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#deleteallpayments" class="tsd-kind-icon">delete<wbr>All<wbr>Payments</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#describegraph" class="tsd-kind-icon">describe<wbr>Graph</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#disconnectpeer" class="tsd-kind-icon">disconnect<wbr>Peer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#estimatefee" class="tsd-kind-icon">estimate<wbr>Fee</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#exportallchannelbackups" class="tsd-kind-icon">export<wbr>All<wbr>Channel<wbr>Backups</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#exportchannelbackup" class="tsd-kind-icon">export<wbr>Channel<wbr>Backup</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#feereport" class="tsd-kind-icon">fee<wbr>Report</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#forwardinghistory" class="tsd-kind-icon">forwarding<wbr>History</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#fundingstatestep" class="tsd-kind-icon">funding<wbr>State<wbr>Step</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#getchaninfo" class="tsd-kind-icon">get<wbr>Chan<wbr>Info</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#getinfo" class="tsd-kind-icon">get<wbr>Info</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#getnetworkinfo" class="tsd-kind-icon">get<wbr>Network<wbr>Info</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#getnodeinfo" class="tsd-kind-icon">get<wbr>Node<wbr>Info</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#gettransactions" class="tsd-kind-icon">get<wbr>Transactions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#listchannels" class="tsd-kind-icon">list<wbr>Channels</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#listinvoices" class="tsd-kind-icon">list<wbr>Invoices</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#listpayments" class="tsd-kind-icon">list<wbr>Payments</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#listpeers" class="tsd-kind-icon">list<wbr>Peers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#listunspent" class="tsd-kind-icon">list<wbr>Unspent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#lookupinvoice" class="tsd-kind-icon">lookup<wbr>Invoice</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#newaddress" class="tsd-kind-icon">new<wbr>Address</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#openchannel" class="tsd-kind-icon">open<wbr>Channel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#openchannelsync" class="tsd-kind-icon">open<wbr>Channel<wbr>Sync</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#pendingchannels" class="tsd-kind-icon">pending<wbr>Channels</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#queryroutes" class="tsd-kind-icon">query<wbr>Routes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#restorechannelbackups" class="tsd-kind-icon">restore<wbr>Channel<wbr>Backups</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#sendcoins" class="tsd-kind-icon">send<wbr>Coins</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#sendmany" class="tsd-kind-icon">send<wbr>Many</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#sendpayment" class="tsd-kind-icon">send<wbr>Payment</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#sendpaymentsync" class="tsd-kind-icon">send<wbr>Payment<wbr>Sync</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#sendtoroute" class="tsd-kind-icon">send<wbr>ToRoute</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#sendtoroutesync" class="tsd-kind-icon">send<wbr>ToRoute<wbr>Sync</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#signmessage" class="tsd-kind-icon">sign<wbr>Message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#stopdaemon" class="tsd-kind-icon">stop<wbr>Daemon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#subscribechannelbackups" class="tsd-kind-icon">subscribe<wbr>Channel<wbr>Backups</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#subscribechannelevents" class="tsd-kind-icon">subscribe<wbr>Channel<wbr>Events</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#subscribechannelgraph" class="tsd-kind-icon">subscribe<wbr>Channel<wbr>Graph</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#subscribeinvoices" class="tsd-kind-icon">subscribe<wbr>Invoices</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#subscribepeerevents" class="tsd-kind-icon">subscribe<wbr>Peer<wbr>Events</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#subscribetransactions" class="tsd-kind-icon">subscribe<wbr>Transactions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#updatechannelpolicy" class="tsd-kind-icon">update<wbr>Channel<wbr>Policy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#verifychanbackup" class="tsd-kind-icon">verify<wbr>Chan<wbr>Backup</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#verifymessage" class="tsd-kind-icon">verify<wbr>Message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ilightningserver.html#walletbalance" class="tsd-kind-icon">wallet<wbr>Balance</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="abandonchannel" class="tsd-anchor"></a>
+					<h3>abandon<wbr>Channel</h3>
+					<div class="tsd-signature tsd-kind-icon">abandon<wbr>Channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/abandonchannelrequest.html" class="tsd-signature-type">AbandonChannelRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/abandonchannelresponse.html" class="tsd-signature-type">AbandonChannelResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L666">src/lnrpc/rpc_grpc_pb.d.ts:666</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="addinvoice" class="tsd-anchor"></a>
+					<h3>add<wbr>Invoice</h3>
+					<div class="tsd-signature tsd-kind-icon">add<wbr>Invoice<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/invoice.html" class="tsd-signature-type">Invoice</a><span class="tsd-signature-symbol">, </span><a href="../classes/addinvoiceresponse.html" class="tsd-signature-type">AddInvoiceResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L671">src/lnrpc/rpc_grpc_pb.d.ts:671</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="bakemacaroon" class="tsd-anchor"></a>
+					<h3>bake<wbr>Macaroon</h3>
+					<div class="tsd-signature tsd-kind-icon">bake<wbr>Macaroon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/bakemacaroonrequest.html" class="tsd-signature-type">BakeMacaroonRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/bakemacaroonresponse.html" class="tsd-signature-type">BakeMacaroonResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L694">src/lnrpc/rpc_grpc_pb.d.ts:694</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="channelacceptor" class="tsd-anchor"></a>
+					<h3>channel<wbr>Acceptor</h3>
+					<div class="tsd-signature tsd-kind-icon">channel<wbr>Acceptor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleBidiStreamingCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/channelacceptresponse.html" class="tsd-signature-type">ChannelAcceptResponse</a><span class="tsd-signature-symbol">, </span><a href="../classes/channelacceptrequest.html" class="tsd-signature-type">ChannelAcceptRequest</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L664">src/lnrpc/rpc_grpc_pb.d.ts:664</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="channelbalance" class="tsd-anchor"></a>
+					<h3>channel<wbr>Balance</h3>
+					<div class="tsd-signature tsd-kind-icon">channel<wbr>Balance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/channelbalancerequest.html" class="tsd-signature-type">ChannelBalanceRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/channelbalanceresponse.html" class="tsd-signature-type">ChannelBalanceResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L642">src/lnrpc/rpc_grpc_pb.d.ts:642</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="closechannel" class="tsd-anchor"></a>
+					<h3>close<wbr>Channel</h3>
+					<div class="tsd-signature tsd-kind-icon">close<wbr>Channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleServerStreamingCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/closechannelrequest.html" class="tsd-signature-type">CloseChannelRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/closestatusupdate.html" class="tsd-signature-type">CloseStatusUpdate</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L665">src/lnrpc/rpc_grpc_pb.d.ts:665</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="closedchannels" class="tsd-anchor"></a>
+					<h3>closed<wbr>Channels</h3>
+					<div class="tsd-signature tsd-kind-icon">closed<wbr>Channels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/closedchannelsrequest.html" class="tsd-signature-type">ClosedChannelsRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/closedchannelsresponse.html" class="tsd-signature-type">ClosedChannelsResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L660">src/lnrpc/rpc_grpc_pb.d.ts:660</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="connectpeer" class="tsd-anchor"></a>
+					<h3>connect<wbr>Peer</h3>
+					<div class="tsd-signature tsd-kind-icon">connect<wbr>Peer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/connectpeerrequest.html" class="tsd-signature-type">ConnectPeerRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/connectpeerresponse.html" class="tsd-signature-type">ConnectPeerResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L652">src/lnrpc/rpc_grpc_pb.d.ts:652</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="debuglevel" class="tsd-anchor"></a>
+					<h3>debug<wbr>Level</h3>
+					<div class="tsd-signature tsd-kind-icon">debug<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/debuglevelrequest.html" class="tsd-signature-type">DebugLevelRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/debuglevelresponse.html" class="tsd-signature-type">DebugLevelResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L685">src/lnrpc/rpc_grpc_pb.d.ts:685</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="decodepayreq" class="tsd-anchor"></a>
+					<h3>decode<wbr>Pay<wbr>Req</h3>
+					<div class="tsd-signature tsd-kind-icon">decode<wbr>Pay<wbr>Req<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/payreqstring.html" class="tsd-signature-type">PayReqString</a><span class="tsd-signature-symbol">, </span><a href="../classes/payreq.html" class="tsd-signature-type">PayReq</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L675">src/lnrpc/rpc_grpc_pb.d.ts:675</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="deleteallpayments" class="tsd-anchor"></a>
+					<h3>delete<wbr>All<wbr>Payments</h3>
+					<div class="tsd-signature tsd-kind-icon">delete<wbr>All<wbr>Payments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/deleteallpaymentsrequest.html" class="tsd-signature-type">DeleteAllPaymentsRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/deleteallpaymentsresponse.html" class="tsd-signature-type">DeleteAllPaymentsResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L677">src/lnrpc/rpc_grpc_pb.d.ts:677</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="describegraph" class="tsd-anchor"></a>
+					<h3>describe<wbr>Graph</h3>
+					<div class="tsd-signature tsd-kind-icon">describe<wbr>Graph<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/channelgraphrequest.html" class="tsd-signature-type">ChannelGraphRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/channelgraph.html" class="tsd-signature-type">ChannelGraph</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L678">src/lnrpc/rpc_grpc_pb.d.ts:678</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="disconnectpeer" class="tsd-anchor"></a>
+					<h3>disconnect<wbr>Peer</h3>
+					<div class="tsd-signature tsd-kind-icon">disconnect<wbr>Peer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/disconnectpeerrequest.html" class="tsd-signature-type">DisconnectPeerRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/disconnectpeerresponse.html" class="tsd-signature-type">DisconnectPeerResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L653">src/lnrpc/rpc_grpc_pb.d.ts:653</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="estimatefee" class="tsd-anchor"></a>
+					<h3>estimate<wbr>Fee</h3>
+					<div class="tsd-signature tsd-kind-icon">estimate<wbr>Fee<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/estimatefeerequest.html" class="tsd-signature-type">EstimateFeeRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/estimatefeeresponse.html" class="tsd-signature-type">EstimateFeeResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L644">src/lnrpc/rpc_grpc_pb.d.ts:644</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="exportallchannelbackups" class="tsd-anchor"></a>
+					<h3>export<wbr>All<wbr>Channel<wbr>Backups</h3>
+					<div class="tsd-signature tsd-kind-icon">export<wbr>All<wbr>Channel<wbr>Backups<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/chanbackupexportrequest.html" class="tsd-signature-type">ChanBackupExportRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/chanbackupsnapshot.html" class="tsd-signature-type">ChanBackupSnapshot</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L690">src/lnrpc/rpc_grpc_pb.d.ts:690</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="exportchannelbackup" class="tsd-anchor"></a>
+					<h3>export<wbr>Channel<wbr>Backup</h3>
+					<div class="tsd-signature tsd-kind-icon">export<wbr>Channel<wbr>Backup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/exportchannelbackuprequest.html" class="tsd-signature-type">ExportChannelBackupRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/channelbackup.html" class="tsd-signature-type">ChannelBackup</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L689">src/lnrpc/rpc_grpc_pb.d.ts:689</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="feereport" class="tsd-anchor"></a>
+					<h3>fee<wbr>Report</h3>
+					<div class="tsd-signature tsd-kind-icon">fee<wbr>Report<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/feereportrequest.html" class="tsd-signature-type">FeeReportRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/feereportresponse.html" class="tsd-signature-type">FeeReportResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L686">src/lnrpc/rpc_grpc_pb.d.ts:686</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="forwardinghistory" class="tsd-anchor"></a>
+					<h3>forwarding<wbr>History</h3>
+					<div class="tsd-signature tsd-kind-icon">forwarding<wbr>History<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/forwardinghistoryrequest.html" class="tsd-signature-type">ForwardingHistoryRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/forwardinghistoryresponse.html" class="tsd-signature-type">ForwardingHistoryResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L688">src/lnrpc/rpc_grpc_pb.d.ts:688</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fundingstatestep" class="tsd-anchor"></a>
+					<h3>funding<wbr>State<wbr>Step</h3>
+					<div class="tsd-signature tsd-kind-icon">funding<wbr>State<wbr>Step<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/fundingtransitionmsg.html" class="tsd-signature-type">FundingTransitionMsg</a><span class="tsd-signature-symbol">, </span><a href="../classes/fundingstatestepresp.html" class="tsd-signature-type">FundingStateStepResp</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L663">src/lnrpc/rpc_grpc_pb.d.ts:663</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="getchaninfo" class="tsd-anchor"></a>
+					<h3>get<wbr>Chan<wbr>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Chan<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/chaninforequest.html" class="tsd-signature-type">ChanInfoRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/channeledge.html" class="tsd-signature-type">ChannelEdge</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L679">src/lnrpc/rpc_grpc_pb.d.ts:679</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="getinfo" class="tsd-anchor"></a>
+					<h3>get<wbr>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/getinforequest.html" class="tsd-signature-type">GetInfoRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/getinforesponse.html" class="tsd-signature-type">GetInfoResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L656">src/lnrpc/rpc_grpc_pb.d.ts:656</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="getnetworkinfo" class="tsd-anchor"></a>
+					<h3>get<wbr>Network<wbr>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Network<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/networkinforequest.html" class="tsd-signature-type">NetworkInfoRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/networkinfo.html" class="tsd-signature-type">NetworkInfo</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L682">src/lnrpc/rpc_grpc_pb.d.ts:682</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="getnodeinfo" class="tsd-anchor"></a>
+					<h3>get<wbr>Node<wbr>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Node<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/nodeinforequest.html" class="tsd-signature-type">NodeInfoRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/nodeinfo.html" class="tsd-signature-type">NodeInfo</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L680">src/lnrpc/rpc_grpc_pb.d.ts:680</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="gettransactions" class="tsd-anchor"></a>
+					<h3>get<wbr>Transactions</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Transactions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/gettransactionsrequest.html" class="tsd-signature-type">GetTransactionsRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/transactiondetails.html" class="tsd-signature-type">TransactionDetails</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L643">src/lnrpc/rpc_grpc_pb.d.ts:643</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="listchannels" class="tsd-anchor"></a>
+					<h3>list<wbr>Channels</h3>
+					<div class="tsd-signature tsd-kind-icon">list<wbr>Channels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/listchannelsrequest.html" class="tsd-signature-type">ListChannelsRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/listchannelsresponse.html" class="tsd-signature-type">ListChannelsResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L658">src/lnrpc/rpc_grpc_pb.d.ts:658</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="listinvoices" class="tsd-anchor"></a>
+					<h3>list<wbr>Invoices</h3>
+					<div class="tsd-signature tsd-kind-icon">list<wbr>Invoices<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/listinvoicerequest.html" class="tsd-signature-type">ListInvoiceRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/listinvoiceresponse.html" class="tsd-signature-type">ListInvoiceResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L672">src/lnrpc/rpc_grpc_pb.d.ts:672</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="listpayments" class="tsd-anchor"></a>
+					<h3>list<wbr>Payments</h3>
+					<div class="tsd-signature tsd-kind-icon">list<wbr>Payments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/listpaymentsrequest.html" class="tsd-signature-type">ListPaymentsRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/listpaymentsresponse.html" class="tsd-signature-type">ListPaymentsResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L676">src/lnrpc/rpc_grpc_pb.d.ts:676</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="listpeers" class="tsd-anchor"></a>
+					<h3>list<wbr>Peers</h3>
+					<div class="tsd-signature tsd-kind-icon">list<wbr>Peers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/listpeersrequest.html" class="tsd-signature-type">ListPeersRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/listpeersresponse.html" class="tsd-signature-type">ListPeersResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L654">src/lnrpc/rpc_grpc_pb.d.ts:654</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="listunspent" class="tsd-anchor"></a>
+					<h3>list<wbr>Unspent</h3>
+					<div class="tsd-signature tsd-kind-icon">list<wbr>Unspent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/listunspentrequest.html" class="tsd-signature-type">ListUnspentRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/listunspentresponse.html" class="tsd-signature-type">ListUnspentResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L646">src/lnrpc/rpc_grpc_pb.d.ts:646</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="lookupinvoice" class="tsd-anchor"></a>
+					<h3>lookup<wbr>Invoice</h3>
+					<div class="tsd-signature tsd-kind-icon">lookup<wbr>Invoice<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/paymenthash.html" class="tsd-signature-type">PaymentHash</a><span class="tsd-signature-symbol">, </span><a href="../classes/invoice.html" class="tsd-signature-type">Invoice</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L673">src/lnrpc/rpc_grpc_pb.d.ts:673</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="newaddress" class="tsd-anchor"></a>
+					<h3>new<wbr>Address</h3>
+					<div class="tsd-signature tsd-kind-icon">new<wbr>Address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/newaddressrequest.html" class="tsd-signature-type">NewAddressRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/newaddressresponse.html" class="tsd-signature-type">NewAddressResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L649">src/lnrpc/rpc_grpc_pb.d.ts:649</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="openchannel" class="tsd-anchor"></a>
+					<h3>open<wbr>Channel</h3>
+					<div class="tsd-signature tsd-kind-icon">open<wbr>Channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleServerStreamingCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/openchannelrequest.html" class="tsd-signature-type">OpenChannelRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/openstatusupdate.html" class="tsd-signature-type">OpenStatusUpdate</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L662">src/lnrpc/rpc_grpc_pb.d.ts:662</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="openchannelsync" class="tsd-anchor"></a>
+					<h3>open<wbr>Channel<wbr>Sync</h3>
+					<div class="tsd-signature tsd-kind-icon">open<wbr>Channel<wbr>Sync<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/openchannelrequest.html" class="tsd-signature-type">OpenChannelRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/channelpoint.html" class="tsd-signature-type">ChannelPoint</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L661">src/lnrpc/rpc_grpc_pb.d.ts:661</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="pendingchannels" class="tsd-anchor"></a>
+					<h3>pending<wbr>Channels</h3>
+					<div class="tsd-signature tsd-kind-icon">pending<wbr>Channels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/pendingchannelsrequest.html" class="tsd-signature-type">PendingChannelsRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/pendingchannelsresponse.html" class="tsd-signature-type">PendingChannelsResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L657">src/lnrpc/rpc_grpc_pb.d.ts:657</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="queryroutes" class="tsd-anchor"></a>
+					<h3>query<wbr>Routes</h3>
+					<div class="tsd-signature tsd-kind-icon">query<wbr>Routes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/queryroutesrequest.html" class="tsd-signature-type">QueryRoutesRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/queryroutesresponse.html" class="tsd-signature-type">QueryRoutesResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L681">src/lnrpc/rpc_grpc_pb.d.ts:681</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="restorechannelbackups" class="tsd-anchor"></a>
+					<h3>restore<wbr>Channel<wbr>Backups</h3>
+					<div class="tsd-signature tsd-kind-icon">restore<wbr>Channel<wbr>Backups<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/restorechanbackuprequest.html" class="tsd-signature-type">RestoreChanBackupRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/restorebackupresponse.html" class="tsd-signature-type">RestoreBackupResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L692">src/lnrpc/rpc_grpc_pb.d.ts:692</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sendcoins" class="tsd-anchor"></a>
+					<h3>send<wbr>Coins</h3>
+					<div class="tsd-signature tsd-kind-icon">send<wbr>Coins<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/sendcoinsrequest.html" class="tsd-signature-type">SendCoinsRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/sendcoinsresponse.html" class="tsd-signature-type">SendCoinsResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L645">src/lnrpc/rpc_grpc_pb.d.ts:645</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sendmany" class="tsd-anchor"></a>
+					<h3>send<wbr>Many</h3>
+					<div class="tsd-signature tsd-kind-icon">send<wbr>Many<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/sendmanyrequest.html" class="tsd-signature-type">SendManyRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/sendmanyresponse.html" class="tsd-signature-type">SendManyResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L648">src/lnrpc/rpc_grpc_pb.d.ts:648</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sendpayment" class="tsd-anchor"></a>
+					<h3>send<wbr>Payment</h3>
+					<div class="tsd-signature tsd-kind-icon">send<wbr>Payment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleBidiStreamingCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/sendrequest.html" class="tsd-signature-type">SendRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/sendresponse.html" class="tsd-signature-type">SendResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L667">src/lnrpc/rpc_grpc_pb.d.ts:667</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sendpaymentsync" class="tsd-anchor"></a>
+					<h3>send<wbr>Payment<wbr>Sync</h3>
+					<div class="tsd-signature tsd-kind-icon">send<wbr>Payment<wbr>Sync<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/sendrequest.html" class="tsd-signature-type">SendRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/sendresponse.html" class="tsd-signature-type">SendResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L668">src/lnrpc/rpc_grpc_pb.d.ts:668</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sendtoroute" class="tsd-anchor"></a>
+					<h3>send<wbr>ToRoute</h3>
+					<div class="tsd-signature tsd-kind-icon">send<wbr>ToRoute<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleBidiStreamingCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/sendtorouterequest.html" class="tsd-signature-type">SendToRouteRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/sendresponse.html" class="tsd-signature-type">SendResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L669">src/lnrpc/rpc_grpc_pb.d.ts:669</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sendtoroutesync" class="tsd-anchor"></a>
+					<h3>send<wbr>ToRoute<wbr>Sync</h3>
+					<div class="tsd-signature tsd-kind-icon">send<wbr>ToRoute<wbr>Sync<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/sendtorouterequest.html" class="tsd-signature-type">SendToRouteRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/sendresponse.html" class="tsd-signature-type">SendResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L670">src/lnrpc/rpc_grpc_pb.d.ts:670</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="signmessage" class="tsd-anchor"></a>
+					<h3>sign<wbr>Message</h3>
+					<div class="tsd-signature tsd-kind-icon">sign<wbr>Message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/signmessagerequest.html" class="tsd-signature-type">SignMessageRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/signmessageresponse.html" class="tsd-signature-type">SignMessageResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L650">src/lnrpc/rpc_grpc_pb.d.ts:650</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="stopdaemon" class="tsd-anchor"></a>
+					<h3>stop<wbr>Daemon</h3>
+					<div class="tsd-signature tsd-kind-icon">stop<wbr>Daemon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/stoprequest.html" class="tsd-signature-type">StopRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/stopresponse.html" class="tsd-signature-type">StopResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L683">src/lnrpc/rpc_grpc_pb.d.ts:683</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="subscribechannelbackups" class="tsd-anchor"></a>
+					<h3>subscribe<wbr>Channel<wbr>Backups</h3>
+					<div class="tsd-signature tsd-kind-icon">subscribe<wbr>Channel<wbr>Backups<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleServerStreamingCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/channelbackupsubscription.html" class="tsd-signature-type">ChannelBackupSubscription</a><span class="tsd-signature-symbol">, </span><a href="../classes/chanbackupsnapshot.html" class="tsd-signature-type">ChanBackupSnapshot</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L693">src/lnrpc/rpc_grpc_pb.d.ts:693</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="subscribechannelevents" class="tsd-anchor"></a>
+					<h3>subscribe<wbr>Channel<wbr>Events</h3>
+					<div class="tsd-signature tsd-kind-icon">subscribe<wbr>Channel<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleServerStreamingCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/channeleventsubscription.html" class="tsd-signature-type">ChannelEventSubscription</a><span class="tsd-signature-symbol">, </span><a href="../classes/channeleventupdate.html" class="tsd-signature-type">ChannelEventUpdate</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L659">src/lnrpc/rpc_grpc_pb.d.ts:659</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="subscribechannelgraph" class="tsd-anchor"></a>
+					<h3>subscribe<wbr>Channel<wbr>Graph</h3>
+					<div class="tsd-signature tsd-kind-icon">subscribe<wbr>Channel<wbr>Graph<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleServerStreamingCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/graphtopologysubscription.html" class="tsd-signature-type">GraphTopologySubscription</a><span class="tsd-signature-symbol">, </span><a href="../classes/graphtopologyupdate.html" class="tsd-signature-type">GraphTopologyUpdate</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L684">src/lnrpc/rpc_grpc_pb.d.ts:684</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="subscribeinvoices" class="tsd-anchor"></a>
+					<h3>subscribe<wbr>Invoices</h3>
+					<div class="tsd-signature tsd-kind-icon">subscribe<wbr>Invoices<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleServerStreamingCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/invoicesubscription.html" class="tsd-signature-type">InvoiceSubscription</a><span class="tsd-signature-symbol">, </span><a href="../classes/invoice.html" class="tsd-signature-type">Invoice</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L674">src/lnrpc/rpc_grpc_pb.d.ts:674</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="subscribepeerevents" class="tsd-anchor"></a>
+					<h3>subscribe<wbr>Peer<wbr>Events</h3>
+					<div class="tsd-signature tsd-kind-icon">subscribe<wbr>Peer<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleServerStreamingCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/peereventsubscription.html" class="tsd-signature-type">PeerEventSubscription</a><span class="tsd-signature-symbol">, </span><a href="../classes/peerevent.html" class="tsd-signature-type">PeerEvent</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L655">src/lnrpc/rpc_grpc_pb.d.ts:655</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="subscribetransactions" class="tsd-anchor"></a>
+					<h3>subscribe<wbr>Transactions</h3>
+					<div class="tsd-signature tsd-kind-icon">subscribe<wbr>Transactions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleServerStreamingCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/gettransactionsrequest.html" class="tsd-signature-type">GetTransactionsRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/transaction.html" class="tsd-signature-type">Transaction</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L647">src/lnrpc/rpc_grpc_pb.d.ts:647</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="updatechannelpolicy" class="tsd-anchor"></a>
+					<h3>update<wbr>Channel<wbr>Policy</h3>
+					<div class="tsd-signature tsd-kind-icon">update<wbr>Channel<wbr>Policy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/policyupdaterequest.html" class="tsd-signature-type">PolicyUpdateRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/policyupdateresponse.html" class="tsd-signature-type">PolicyUpdateResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L687">src/lnrpc/rpc_grpc_pb.d.ts:687</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="verifychanbackup" class="tsd-anchor"></a>
+					<h3>verify<wbr>Chan<wbr>Backup</h3>
+					<div class="tsd-signature tsd-kind-icon">verify<wbr>Chan<wbr>Backup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/chanbackupsnapshot.html" class="tsd-signature-type">ChanBackupSnapshot</a><span class="tsd-signature-symbol">, </span><a href="../classes/verifychanbackupresponse.html" class="tsd-signature-type">VerifyChanBackupResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L691">src/lnrpc/rpc_grpc_pb.d.ts:691</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="verifymessage" class="tsd-anchor"></a>
+					<h3>verify<wbr>Message</h3>
+					<div class="tsd-signature tsd-kind-icon">verify<wbr>Message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/verifymessagerequest.html" class="tsd-signature-type">VerifyMessageRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/verifymessageresponse.html" class="tsd-signature-type">VerifyMessageResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L651">src/lnrpc/rpc_grpc_pb.d.ts:651</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="walletbalance" class="tsd-anchor"></a>
+					<h3>wallet<wbr>Balance</h3>
+					<div class="tsd-signature tsd-kind-icon">wallet<wbr>Balance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">grpc.handleUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/walletbalancerequest.html" class="tsd-signature-type">WalletBalanceRequest</a><span class="tsd-signature-symbol">, </span><a href="../classes/walletbalanceresponse.html" class="tsd-signature-type">WalletBalanceResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matthewlilley/lightning-rpc/blob/fff31c0/src/lnrpc/rpc_grpc_pb.d.ts#L641">src/lnrpc/rpc_grpc_pb.d.ts:641</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
+						<a href="ilightningserver.html" class="tsd-kind-icon">ILightning<wbr>Server</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#abandonchannel" class="tsd-kind-icon">abandon<wbr>Channel</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#addinvoice" class="tsd-kind-icon">add<wbr>Invoice</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#bakemacaroon" class="tsd-kind-icon">bake<wbr>Macaroon</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#channelacceptor" class="tsd-kind-icon">channel<wbr>Acceptor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#channelbalance" class="tsd-kind-icon">channel<wbr>Balance</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#closechannel" class="tsd-kind-icon">close<wbr>Channel</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#closedchannels" class="tsd-kind-icon">closed<wbr>Channels</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#connectpeer" class="tsd-kind-icon">connect<wbr>Peer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#debuglevel" class="tsd-kind-icon">debug<wbr>Level</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#decodepayreq" class="tsd-kind-icon">decode<wbr>Pay<wbr>Req</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#deleteallpayments" class="tsd-kind-icon">delete<wbr>All<wbr>Payments</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#describegraph" class="tsd-kind-icon">describe<wbr>Graph</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#disconnectpeer" class="tsd-kind-icon">disconnect<wbr>Peer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#estimatefee" class="tsd-kind-icon">estimate<wbr>Fee</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#exportallchannelbackups" class="tsd-kind-icon">export<wbr>All<wbr>Channel<wbr>Backups</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#exportchannelbackup" class="tsd-kind-icon">export<wbr>Channel<wbr>Backup</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#feereport" class="tsd-kind-icon">fee<wbr>Report</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#forwardinghistory" class="tsd-kind-icon">forwarding<wbr>History</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#fundingstatestep" class="tsd-kind-icon">funding<wbr>State<wbr>Step</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#getchaninfo" class="tsd-kind-icon">get<wbr>Chan<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#getinfo" class="tsd-kind-icon">get<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#getnetworkinfo" class="tsd-kind-icon">get<wbr>Network<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#getnodeinfo" class="tsd-kind-icon">get<wbr>Node<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#gettransactions" class="tsd-kind-icon">get<wbr>Transactions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#listchannels" class="tsd-kind-icon">list<wbr>Channels</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#listinvoices" class="tsd-kind-icon">list<wbr>Invoices</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#listpayments" class="tsd-kind-icon">list<wbr>Payments</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#listpeers" class="tsd-kind-icon">list<wbr>Peers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#listunspent" class="tsd-kind-icon">list<wbr>Unspent</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#lookupinvoice" class="tsd-kind-icon">lookup<wbr>Invoice</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#newaddress" class="tsd-kind-icon">new<wbr>Address</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#openchannel" class="tsd-kind-icon">open<wbr>Channel</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#openchannelsync" class="tsd-kind-icon">open<wbr>Channel<wbr>Sync</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#pendingchannels" class="tsd-kind-icon">pending<wbr>Channels</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#queryroutes" class="tsd-kind-icon">query<wbr>Routes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#restorechannelbackups" class="tsd-kind-icon">restore<wbr>Channel<wbr>Backups</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#sendcoins" class="tsd-kind-icon">send<wbr>Coins</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#sendmany" class="tsd-kind-icon">send<wbr>Many</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#sendpayment" class="tsd-kind-icon">send<wbr>Payment</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#sendpaymentsync" class="tsd-kind-icon">send<wbr>Payment<wbr>Sync</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#sendtoroute" class="tsd-kind-icon">send<wbr>ToRoute</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#sendtoroutesync" class="tsd-kind-icon">send<wbr>ToRoute<wbr>Sync</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#signmessage" class="tsd-kind-icon">sign<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#stopdaemon" class="tsd-kind-icon">stop<wbr>Daemon</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#subscribechannelbackups" class="tsd-kind-icon">subscribe<wbr>Channel<wbr>Backups</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#subscribechannelevents" class="tsd-kind-icon">subscribe<wbr>Channel<wbr>Events</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#subscribechannelgraph" class="tsd-kind-icon">subscribe<wbr>Channel<wbr>Graph</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#subscribeinvoices" class="tsd-kind-icon">subscribe<wbr>Invoices</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#subscribepeerevents" class="tsd-kind-icon">subscribe<wbr>Peer<wbr>Events</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#subscribetransactions" class="tsd-kind-icon">subscribe<wbr>Transactions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#updatechannelpolicy" class="tsd-kind-icon">update<wbr>Channel<wbr>Policy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#verifychanbackup" class="tsd-kind-icon">verify<wbr>Chan<wbr>Backup</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#verifymessage" class="tsd-kind-icon">verify<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ilightningserver.html#walletbalance" class="tsd-kind-icon">wallet<wbr>Balance</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
