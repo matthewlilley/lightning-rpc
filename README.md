@@ -1,41 +1,114 @@
 # Lightning RPC
 
-```typescript
-import createLightning from 'lightning';
+Statically generated Lightning gRPC library for Node.js, written in TypeScript.
 
-const config: LightningRpcConfig = {
+## Enviroment Variables
+
+- LND_HOST
+- LND_PORT
+- LND_CERT_PATH
+- LND_MACAROON_PATH
+- LND_WALLET_PASSWORD
+
+## Useage
+
+```typescript
+import {
+  GetInfoRequest,
+  GetInfoResponse,
+  Invoice,
+  InvoiceSubscription,
+  LightningRpcConfig,
+  UnlockWalletRequest,
+  UnlockWalletResponse,
+  WalletBalanceRequest,
+  WalletBalanceResponse,
+  createLightning,
+  createWalletUnlocker,
+} from 'lightning-rpc';
+
+const config = {
   host: String(process.env.LND_HOST),
   port: String(process.env.LND_PORT),
-  rpcProtoPath: String(process.env.LND_RPC_PROTO_PATH),
   certPath: String(process.env.LND_CERT_PATH),
   macaroonPath: String(process.env.LND_MACAROON_PATH),
 };
 
-const lightning: ILightningClient = await createLightning(config);
+const walletUnlocker = createWalletUnlocker(config);
 
-const getInfoRequest = new GetInfoRequest();
-lightning.getInfo(
-  getInfoRequest,
-  (error: ServiceError | null, response: GetInfoResponse) => {
-    if (error) {
-      console.error(error);
+walletUnlocker.waitForReady(Infinity, (error: Error | null) => {
+  if (error) {
+    console.error(error);
+  }
+
+  const unlockWalletRequest = new UnlockWalletRequest();
+
+  if (!process.env.LND_WALLET_PASSWORD) {
+    throw 'No wallet password. Set the LND_WALLET_PASSWORD enviroment variable.';
+  }
+
+  unlockWalletRequest.setWalletPassword(
+    Buffer.from(process.env.LND_WALLET_PASSWORD),
+  );
+
+  walletUnlocker.unlockWallet(
+    unlockWalletRequest,
+    (error: ServiceError | null, response: UnlockWalletResponse) => {
+      if (error) {
+        console.error(error);
+      }
+      console.log('Wallet unlocked')
+      const lightning = await createLightning(config);
+
+      lightning.waitForReady(Infinity, (error: Error | null) => {
+        if (error) {
+          throw error;
+        }
+        const getInfoRequest = new GetInfoRequest();
+        lightning.getInfo(
+          getInfoRequest,
+          (error: ServiceError | null, response: GetInfoResponse) => {
+            if (error) {
+              console.error(error);
+            }
+            console.log(response);
+          },
+        );
+
+        const invoiceSubscription = new InvoiceSubscription();
+        const stream: ClientReadableStream<Invoice> = lightning.subscribeInvoices(
+          invoiceSubscription,
+        );
+        stream.on('data', (invoice: Invoice) => {
+          console.log('invoice', invoice);
+        })
+      })
     }
-    console.log(response);
-  },
-);
-
-const invoiceSubscription: InvoiceSubscription = new InvoiceSubscription();
-const stream: ClientReadableStream<Invoice> = lightning.subscribeInvoices(
-  invoiceSubscription,
-);
-stream.on('data', (invoice: Invoice) => {
-  console.log('invoice', invoice);
+  )
 });
-console.log('stream', stream);
+
 ```
 
 ## Compile from source
 
 Requirements: protoc
 
-./generate.sh
+```bash
+git clone https://github.com/matthewlilley/lightning-rpc.git
+
+cd lightning-rpc
+
+yarn generate
+```
+
+## Docs
+
+https://matthewlilley.github.io/lightning-rpc
+
+## Contributing
+
+Want to contribute? Awesome! Feel free to create an issue and/or pull request.
+
+## Licence
+
+MIT

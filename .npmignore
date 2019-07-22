@@ -1,8 +1,13 @@
-src
-proto
+docs
 examples
+proto
+src
+tls.cert
 .editorconfig
+.env
+tsconfig.json
+admin.macaroon
+README.md
 .prettierignore
 .prettierrc
 generate.sh
-tsconfig.json

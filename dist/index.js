@@ -1,71 +1,80 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
+require("dotenv/config");
+const grpc_1 = require("grpc");
+const rpc_grpc_pb_1 = require("./lnrpc/rpc_grpc_pb");
+const debug_1 = require("debug");
+const fs_1 = require("fs");
 if (!process.env.GRPC_SSL_CIPHER_SUITES) {
     process.env.GRPC_SSL_CIPHER_SUITES = 'HIGH+ECDSA';
 }
-var debug_1 = require("debug");
-var fs_1 = require("fs");
-var grpc_1 = require("grpc");
-var os_1 = require("os");
-var lnrpc_1 = require("../generated/lnrpc");
-var log = debug_1.default('lightning');
-var createSsl = grpc_1.credentials.createSsl, createFromMetadataGenerator = grpc_1.credentials.createFromMetadataGenerator, combineChannelCredentials = grpc_1.credentials.combineChannelCredentials;
-exports.default = (function (config) { return __awaiter(_this, void 0, void 0, function () {
-    var lndCert, sslCredentials, macaroonCredentials, combinedCredentials;
-    return __generator(this, function (_a) {
-        lndCert = fs_1.readFileSync(config.certPath || "/home/" + os_1.userInfo().username + "/.lnd/tls.cert");
-        log('lndCert', lndCert);
-        sslCredentials = createSsl(lndCert);
-        log('sslCredentials', sslCredentials);
-        macaroonCredentials = createFromMetadataGenerator(function (args, callback) {
-            var adminMacaroon = fs_1.readFileSync(config.macaroonPath || "/home/" + os_1.userInfo().username + "/.lnd/admin.macaroon");
-            var metadata = new grpc_1.Metadata();
-            metadata.add('macaroon', adminMacaroon.toString('hex'));
-            callback(null, metadata);
-        });
-        log('macaroonCredentials', macaroonCredentials);
-        combinedCredentials = combineChannelCredentials(sslCredentials, macaroonCredentials);
-        log('combinedCredentials', combinedCredentials);
-        return [2 /*return*/, new lnrpc_1.LightningClient(config.host + ":" + config.port, combinedCredentials)];
+const log = debug_1.default('lightning');
+const { createSsl, createFromMetadataGenerator, combineChannelCredentials, } = grpc_1.credentials;
+function getAddress(config) {
+    const host = config.host || process.env.LND_HOST;
+    const port = config.port || process.env.LND_PORT;
+    // const certPath = config.certPath || process.env.LND_CERT_PATH;
+    // const macaroonPath = config.macaroonPath || process.env.LND_MACAROON_PATH;
+    if (!host) {
+        throw 'No host. Add host to config, or set the LND_HOST enviroment variable.';
+    }
+    if (!port) {
+        throw 'No port. Add port to config, or set the LND_PORT enviroment variable.';
+    }
+    return `${host}:${port}`;
+}
+exports.getAddress = getAddress;
+function getCredentials(config) {
+    const certPath = config.certPath || process.env.LND_CERT_PATH;
+    const macaroonPath = config.macaroonPath || process.env.LND_MACAROON_PATH;
+    if (!certPath) {
+        throw 'No certPath. Add certPath to config, or set the LND_CERT_PATH enviroment variable.';
+    }
+    if (!macaroonPath) {
+        throw 'No macaroonPath. Add macaroonPath to config, or set the LND_MACAROON_PATH enviroment variable.';
+    }
+    log('certPath', certPath);
+    const lndCert = fs_1.readFileSync(certPath);
+    log('lndCert', lndCert);
+    const sslCredentials = createSsl(lndCert);
+    log('sslCredentials', sslCredentials);
+    log('macaroonPath', macaroonPath);
+    const adminMacaroon = fs_1.readFileSync(macaroonPath);
+    const metadata = new grpc_1.Metadata();
+    metadata.add('macaroon', adminMacaroon.toString('hex'));
+    const macaroonCredentials = createFromMetadataGenerator((params, callback) => {
+        callback(null, metadata);
     });
-}); });
-__export(require("../generated/lnrpc"));
+    // log('macaroonCredentials', macaroonCredentials);
+    const channelCredentials = combineChannelCredentials(sslCredentials, macaroonCredentials);
+    // log('combinedCredentials', combinedCredentials);
+    return channelCredentials;
+}
+exports.getCredentials = getCredentials;
+function createWalletUnlocker(config) {
+    return new rpc_grpc_pb_1.WalletUnlockerClient(getAddress(config), getCredentials(config), config.options);
+}
+exports.createWalletUnlocker = createWalletUnlocker;
+function createLightning(config) {
+    return new rpc_grpc_pb_1.LightningClient(getAddress(config), getCredentials(config), config.options);
+}
+exports.createLightning = createLightning;
+__export(require("./lnrpc/rpc_grpc_pb"));
+__export(require("./lnrpc/rpc_pb"));
+// export * from './autopilotrpc/autopilot_grpc_pb';
+// export * from './autopilotrpc/autopilot_pb';
+// export * from './chainrpc/chainnotifier_grpc_pb';
+// export * from './chainrpc/chainnotifier_pb';
+// export * from './invoicesrpc/invoices_grpc_pb';
+// export * from './invoicesrpc/invoices_pb';
+// export * from './signrpc/signer_grpc_pb';
+// export * from './signrpc/signer_pb';
+// export * from './walletrpc/walletkit_grpc_pb';
+// export * from './walletrpc/walletkit_pb';
+// export * from './watchtowerrpc/watchtower_grpc_pb';
+// export * from './watchtowerrpc/watchtower_pb';
+// export * from './wtclientrpc/wtclient_grpc_pb';
+// export * from './wtclientrpc/wtclient_pb';

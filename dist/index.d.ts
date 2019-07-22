@@ -1,11 +1,16 @@
-import { ILightningClient } from '../generated/lnrpc';
-export interface LightningRpcConfig {
-    host: string;
-    port: string;
-    rpcProtoPath?: string;
+import 'dotenv/config';
+import { ChannelCredentials } from 'grpc';
+import { LightningClient, WalletUnlockerClient } from './lnrpc/rpc_grpc_pb';
+export interface Config {
+    host?: string;
+    port?: string;
     certPath?: string;
     macaroonPath?: string;
+    options?: object;
 }
-declare const _default: (config: LightningRpcConfig) => Promise<ILightningClient>;
-export default _default;
-export * from '../generated/lnrpc';
+export declare function getAddress(config: Config): string;
+export declare function getCredentials(config: Config): ChannelCredentials;
+export declare function createWalletUnlocker(config: Config): WalletUnlockerClient;
+export declare function createLightning(config: Config): LightningClient;
+export * from './lnrpc/rpc_grpc_pb';
+export * from './lnrpc/rpc_pb';
