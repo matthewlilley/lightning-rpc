@@ -1,4 +1,4 @@
-import { ILightningClient } from '../generated/lnrpc';
+import { LightningClient } from '../generated/lnrpc';
 export interface LightningRpcConfig {
     host: string;
     port: string;
@@ -6,6 +6,6 @@ export interface LightningRpcConfig {
     certPath?: string;
     macaroonPath?: string;
 }
-declare const _default: (config: LightningRpcConfig) => Promise<ILightningClient>;
+declare const _default: (config: LightningRpcConfig) => LightningClient;
 export default _default;
 export * from '../generated/lnrpc';

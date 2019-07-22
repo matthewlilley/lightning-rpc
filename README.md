@@ -1,7 +1,9 @@
 # Lightning RPC
 
+This's an example of a statically generated gRPC Lightning Client, with accompanying types.
+
 ```typescript
-import createLightning from 'lightning';
+import createLightning from 'lightning-rpc';
 
 const config: LightningRpcConfig = {
   host: String(process.env.LND_HOST),

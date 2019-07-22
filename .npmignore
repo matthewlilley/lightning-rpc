@@ -6,3 +6,7 @@ examples
 .prettierrc
 generate.sh
 tsconfig.json
+
+tls.cert
+admin.macaroon
+.env

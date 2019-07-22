@@ -19,15 +19,15 @@ echo "Generating js..."
 --js_out=import_style=commonjs,binary:./generated/lnrpc \
 --grpc_out=./generated/lnrpc \
 --plugin=protoc-gen-grpc=./node_modules/.bin/grpc_tools_node_protoc_plugin \
--I ./proto \
-./proto/**/*.proto
+--proto_path=./proto \
+./**/*.proto
 
 echo "Generating types..."
 protoc \
 --plugin=protoc-gen-ts=./node_modules/.bin/protoc-gen-ts \
 --ts_out=./generated/lnrpc \
--I ./proto \
-./proto/**/*.proto
+--proto_path=./proto \
+./**/*.proto
 
 echo "Compiling lnrpc..."
 npm run build

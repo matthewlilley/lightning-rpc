@@ -1,2 +1,6 @@
 node_modules
 proto
+
+tls.cert
+admin.macaroon
+.env
