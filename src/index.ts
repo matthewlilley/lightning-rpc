@@ -7,7 +7,7 @@ import { readFileSync } from 'fs';
 import { ChannelCredentials, credentials, Metadata } from 'grpc';
 import { userInfo } from 'os';
 
-import { ILightningClient, LightningClient } from '../generated/lnrpc';
+import { ILightningClient, LightningClient } from '../generated/rpc_grpc_pb';
 
 const log = createDebug('lightning');
 
@@ -23,6 +23,7 @@ export interface LightningRpcConfig {
   rpcProtoPath?: string;
   certPath?: string;
   macaroonPath?: string;
+  options?: object;
 }
 
 export default (config: LightningRpcConfig): LightningClient => {
@@ -57,9 +58,11 @@ export default (config: LightningRpcConfig): LightningClient => {
   const client = new LightningClient(
     `${config.host}:${config.port}`,
     combinedCredentials,
+    config.options,
   );
 
   return client;
 };
 
-export * from '../generated/lnrpc';
+export * from '../generated/rpc_grpc_pb';
+export * from '../generated/rpc_pb';

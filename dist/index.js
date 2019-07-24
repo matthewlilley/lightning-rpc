@@ -10,7 +10,7 @@ var debug_1 = require("debug");
 var fs_1 = require("fs");
 var grpc_1 = require("grpc");
 var os_1 = require("os");
-var lnrpc_1 = require("../generated/lnrpc");
+var rpc_grpc_pb_1 = require("../generated/rpc_grpc_pb");
 var log = debug_1.default('lightning');
 var createSsl = grpc_1.credentials.createSsl, createFromMetadataGenerator = grpc_1.credentials.createFromMetadataGenerator, combineChannelCredentials = grpc_1.credentials.combineChannelCredentials;
 exports.default = (function (config) {
@@ -31,7 +31,8 @@ exports.default = (function (config) {
     // log('macaroonCredentials', macaroonCredentials);
     var combinedCredentials = combineChannelCredentials(sslCredentials, macaroonCredentials);
     // log('combinedCredentials', combinedCredentials);
-    var client = new lnrpc_1.LightningClient(config.host + ":" + config.port, combinedCredentials);
+    var client = new rpc_grpc_pb_1.LightningClient(config.host + ":" + config.port, combinedCredentials, config.options);
     return client;
 });
-__export(require("../generated/lnrpc"));
+__export(require("../generated/rpc_grpc_pb"));
+__export(require("../generated/rpc_pb"));

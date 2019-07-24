@@ -2,1074 +2,1074 @@
 
 'use strict';
 var grpc = require('grpc');
-var lnrpc_pb = require('./lnrpc_pb.js');
+var rpc_pb = require('./rpc_pb.js');
 var google_api_annotations_pb = require('./google/api/annotations_pb.js');
 
 function serialize_lnrpc_AbandonChannelRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.AbandonChannelRequest)) {
+  if (!(arg instanceof rpc_pb.AbandonChannelRequest)) {
     throw new Error('Expected argument of type lnrpc.AbandonChannelRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_AbandonChannelRequest(buffer_arg) {
-  return lnrpc_pb.AbandonChannelRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.AbandonChannelRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_AbandonChannelResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.AbandonChannelResponse)) {
+  if (!(arg instanceof rpc_pb.AbandonChannelResponse)) {
     throw new Error('Expected argument of type lnrpc.AbandonChannelResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_AbandonChannelResponse(buffer_arg) {
-  return lnrpc_pb.AbandonChannelResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.AbandonChannelResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_AddInvoiceResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.AddInvoiceResponse)) {
+  if (!(arg instanceof rpc_pb.AddInvoiceResponse)) {
     throw new Error('Expected argument of type lnrpc.AddInvoiceResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_AddInvoiceResponse(buffer_arg) {
-  return lnrpc_pb.AddInvoiceResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.AddInvoiceResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChanBackupExportRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ChanBackupExportRequest)) {
+  if (!(arg instanceof rpc_pb.ChanBackupExportRequest)) {
     throw new Error('Expected argument of type lnrpc.ChanBackupExportRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChanBackupExportRequest(buffer_arg) {
-  return lnrpc_pb.ChanBackupExportRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChanBackupExportRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChanBackupSnapshot(arg) {
-  if (!(arg instanceof lnrpc_pb.ChanBackupSnapshot)) {
+  if (!(arg instanceof rpc_pb.ChanBackupSnapshot)) {
     throw new Error('Expected argument of type lnrpc.ChanBackupSnapshot');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChanBackupSnapshot(buffer_arg) {
-  return lnrpc_pb.ChanBackupSnapshot.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChanBackupSnapshot.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChanInfoRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ChanInfoRequest)) {
+  if (!(arg instanceof rpc_pb.ChanInfoRequest)) {
     throw new Error('Expected argument of type lnrpc.ChanInfoRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChanInfoRequest(buffer_arg) {
-  return lnrpc_pb.ChanInfoRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChanInfoRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChangePasswordRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ChangePasswordRequest)) {
+  if (!(arg instanceof rpc_pb.ChangePasswordRequest)) {
     throw new Error('Expected argument of type lnrpc.ChangePasswordRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChangePasswordRequest(buffer_arg) {
-  return lnrpc_pb.ChangePasswordRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChangePasswordRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChangePasswordResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.ChangePasswordResponse)) {
+  if (!(arg instanceof rpc_pb.ChangePasswordResponse)) {
     throw new Error('Expected argument of type lnrpc.ChangePasswordResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChangePasswordResponse(buffer_arg) {
-  return lnrpc_pb.ChangePasswordResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChangePasswordResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChannelBackup(arg) {
-  if (!(arg instanceof lnrpc_pb.ChannelBackup)) {
+  if (!(arg instanceof rpc_pb.ChannelBackup)) {
     throw new Error('Expected argument of type lnrpc.ChannelBackup');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChannelBackup(buffer_arg) {
-  return lnrpc_pb.ChannelBackup.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChannelBackup.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChannelBackupSubscription(arg) {
-  if (!(arg instanceof lnrpc_pb.ChannelBackupSubscription)) {
+  if (!(arg instanceof rpc_pb.ChannelBackupSubscription)) {
     throw new Error('Expected argument of type lnrpc.ChannelBackupSubscription');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChannelBackupSubscription(buffer_arg) {
-  return lnrpc_pb.ChannelBackupSubscription.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChannelBackupSubscription.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChannelBalanceRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ChannelBalanceRequest)) {
+  if (!(arg instanceof rpc_pb.ChannelBalanceRequest)) {
     throw new Error('Expected argument of type lnrpc.ChannelBalanceRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChannelBalanceRequest(buffer_arg) {
-  return lnrpc_pb.ChannelBalanceRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChannelBalanceRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChannelBalanceResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.ChannelBalanceResponse)) {
+  if (!(arg instanceof rpc_pb.ChannelBalanceResponse)) {
     throw new Error('Expected argument of type lnrpc.ChannelBalanceResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChannelBalanceResponse(buffer_arg) {
-  return lnrpc_pb.ChannelBalanceResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChannelBalanceResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChannelEdge(arg) {
-  if (!(arg instanceof lnrpc_pb.ChannelEdge)) {
+  if (!(arg instanceof rpc_pb.ChannelEdge)) {
     throw new Error('Expected argument of type lnrpc.ChannelEdge');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChannelEdge(buffer_arg) {
-  return lnrpc_pb.ChannelEdge.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChannelEdge.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChannelEventSubscription(arg) {
-  if (!(arg instanceof lnrpc_pb.ChannelEventSubscription)) {
+  if (!(arg instanceof rpc_pb.ChannelEventSubscription)) {
     throw new Error('Expected argument of type lnrpc.ChannelEventSubscription');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChannelEventSubscription(buffer_arg) {
-  return lnrpc_pb.ChannelEventSubscription.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChannelEventSubscription.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChannelEventUpdate(arg) {
-  if (!(arg instanceof lnrpc_pb.ChannelEventUpdate)) {
+  if (!(arg instanceof rpc_pb.ChannelEventUpdate)) {
     throw new Error('Expected argument of type lnrpc.ChannelEventUpdate');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChannelEventUpdate(buffer_arg) {
-  return lnrpc_pb.ChannelEventUpdate.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChannelEventUpdate.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChannelGraph(arg) {
-  if (!(arg instanceof lnrpc_pb.ChannelGraph)) {
+  if (!(arg instanceof rpc_pb.ChannelGraph)) {
     throw new Error('Expected argument of type lnrpc.ChannelGraph');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChannelGraph(buffer_arg) {
-  return lnrpc_pb.ChannelGraph.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChannelGraph.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChannelGraphRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ChannelGraphRequest)) {
+  if (!(arg instanceof rpc_pb.ChannelGraphRequest)) {
     throw new Error('Expected argument of type lnrpc.ChannelGraphRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChannelGraphRequest(buffer_arg) {
-  return lnrpc_pb.ChannelGraphRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChannelGraphRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ChannelPoint(arg) {
-  if (!(arg instanceof lnrpc_pb.ChannelPoint)) {
+  if (!(arg instanceof rpc_pb.ChannelPoint)) {
     throw new Error('Expected argument of type lnrpc.ChannelPoint');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ChannelPoint(buffer_arg) {
-  return lnrpc_pb.ChannelPoint.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ChannelPoint.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_CloseChannelRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.CloseChannelRequest)) {
+  if (!(arg instanceof rpc_pb.CloseChannelRequest)) {
     throw new Error('Expected argument of type lnrpc.CloseChannelRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_CloseChannelRequest(buffer_arg) {
-  return lnrpc_pb.CloseChannelRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.CloseChannelRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_CloseStatusUpdate(arg) {
-  if (!(arg instanceof lnrpc_pb.CloseStatusUpdate)) {
+  if (!(arg instanceof rpc_pb.CloseStatusUpdate)) {
     throw new Error('Expected argument of type lnrpc.CloseStatusUpdate');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_CloseStatusUpdate(buffer_arg) {
-  return lnrpc_pb.CloseStatusUpdate.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.CloseStatusUpdate.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ClosedChannelsRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ClosedChannelsRequest)) {
+  if (!(arg instanceof rpc_pb.ClosedChannelsRequest)) {
     throw new Error('Expected argument of type lnrpc.ClosedChannelsRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ClosedChannelsRequest(buffer_arg) {
-  return lnrpc_pb.ClosedChannelsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ClosedChannelsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ClosedChannelsResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.ClosedChannelsResponse)) {
+  if (!(arg instanceof rpc_pb.ClosedChannelsResponse)) {
     throw new Error('Expected argument of type lnrpc.ClosedChannelsResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ClosedChannelsResponse(buffer_arg) {
-  return lnrpc_pb.ClosedChannelsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ClosedChannelsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ConnectPeerRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ConnectPeerRequest)) {
+  if (!(arg instanceof rpc_pb.ConnectPeerRequest)) {
     throw new Error('Expected argument of type lnrpc.ConnectPeerRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ConnectPeerRequest(buffer_arg) {
-  return lnrpc_pb.ConnectPeerRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ConnectPeerRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ConnectPeerResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.ConnectPeerResponse)) {
+  if (!(arg instanceof rpc_pb.ConnectPeerResponse)) {
     throw new Error('Expected argument of type lnrpc.ConnectPeerResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ConnectPeerResponse(buffer_arg) {
-  return lnrpc_pb.ConnectPeerResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ConnectPeerResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_DebugLevelRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.DebugLevelRequest)) {
+  if (!(arg instanceof rpc_pb.DebugLevelRequest)) {
     throw new Error('Expected argument of type lnrpc.DebugLevelRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_DebugLevelRequest(buffer_arg) {
-  return lnrpc_pb.DebugLevelRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.DebugLevelRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_DebugLevelResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.DebugLevelResponse)) {
+  if (!(arg instanceof rpc_pb.DebugLevelResponse)) {
     throw new Error('Expected argument of type lnrpc.DebugLevelResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_DebugLevelResponse(buffer_arg) {
-  return lnrpc_pb.DebugLevelResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.DebugLevelResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_DeleteAllPaymentsRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.DeleteAllPaymentsRequest)) {
+  if (!(arg instanceof rpc_pb.DeleteAllPaymentsRequest)) {
     throw new Error('Expected argument of type lnrpc.DeleteAllPaymentsRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_DeleteAllPaymentsRequest(buffer_arg) {
-  return lnrpc_pb.DeleteAllPaymentsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.DeleteAllPaymentsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_DeleteAllPaymentsResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.DeleteAllPaymentsResponse)) {
+  if (!(arg instanceof rpc_pb.DeleteAllPaymentsResponse)) {
     throw new Error('Expected argument of type lnrpc.DeleteAllPaymentsResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_DeleteAllPaymentsResponse(buffer_arg) {
-  return lnrpc_pb.DeleteAllPaymentsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.DeleteAllPaymentsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_DisconnectPeerRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.DisconnectPeerRequest)) {
+  if (!(arg instanceof rpc_pb.DisconnectPeerRequest)) {
     throw new Error('Expected argument of type lnrpc.DisconnectPeerRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_DisconnectPeerRequest(buffer_arg) {
-  return lnrpc_pb.DisconnectPeerRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.DisconnectPeerRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_DisconnectPeerResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.DisconnectPeerResponse)) {
+  if (!(arg instanceof rpc_pb.DisconnectPeerResponse)) {
     throw new Error('Expected argument of type lnrpc.DisconnectPeerResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_DisconnectPeerResponse(buffer_arg) {
-  return lnrpc_pb.DisconnectPeerResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.DisconnectPeerResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_EstimateFeeRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.EstimateFeeRequest)) {
+  if (!(arg instanceof rpc_pb.EstimateFeeRequest)) {
     throw new Error('Expected argument of type lnrpc.EstimateFeeRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_EstimateFeeRequest(buffer_arg) {
-  return lnrpc_pb.EstimateFeeRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.EstimateFeeRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_EstimateFeeResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.EstimateFeeResponse)) {
+  if (!(arg instanceof rpc_pb.EstimateFeeResponse)) {
     throw new Error('Expected argument of type lnrpc.EstimateFeeResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_EstimateFeeResponse(buffer_arg) {
-  return lnrpc_pb.EstimateFeeResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.EstimateFeeResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ExportChannelBackupRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ExportChannelBackupRequest)) {
+  if (!(arg instanceof rpc_pb.ExportChannelBackupRequest)) {
     throw new Error('Expected argument of type lnrpc.ExportChannelBackupRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ExportChannelBackupRequest(buffer_arg) {
-  return lnrpc_pb.ExportChannelBackupRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ExportChannelBackupRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_FeeReportRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.FeeReportRequest)) {
+  if (!(arg instanceof rpc_pb.FeeReportRequest)) {
     throw new Error('Expected argument of type lnrpc.FeeReportRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_FeeReportRequest(buffer_arg) {
-  return lnrpc_pb.FeeReportRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.FeeReportRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_FeeReportResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.FeeReportResponse)) {
+  if (!(arg instanceof rpc_pb.FeeReportResponse)) {
     throw new Error('Expected argument of type lnrpc.FeeReportResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_FeeReportResponse(buffer_arg) {
-  return lnrpc_pb.FeeReportResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.FeeReportResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ForwardingHistoryRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ForwardingHistoryRequest)) {
+  if (!(arg instanceof rpc_pb.ForwardingHistoryRequest)) {
     throw new Error('Expected argument of type lnrpc.ForwardingHistoryRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ForwardingHistoryRequest(buffer_arg) {
-  return lnrpc_pb.ForwardingHistoryRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ForwardingHistoryRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ForwardingHistoryResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.ForwardingHistoryResponse)) {
+  if (!(arg instanceof rpc_pb.ForwardingHistoryResponse)) {
     throw new Error('Expected argument of type lnrpc.ForwardingHistoryResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ForwardingHistoryResponse(buffer_arg) {
-  return lnrpc_pb.ForwardingHistoryResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ForwardingHistoryResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_GenSeedRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.GenSeedRequest)) {
+  if (!(arg instanceof rpc_pb.GenSeedRequest)) {
     throw new Error('Expected argument of type lnrpc.GenSeedRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_GenSeedRequest(buffer_arg) {
-  return lnrpc_pb.GenSeedRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.GenSeedRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_GenSeedResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.GenSeedResponse)) {
+  if (!(arg instanceof rpc_pb.GenSeedResponse)) {
     throw new Error('Expected argument of type lnrpc.GenSeedResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_GenSeedResponse(buffer_arg) {
-  return lnrpc_pb.GenSeedResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.GenSeedResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_GetInfoRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.GetInfoRequest)) {
+  if (!(arg instanceof rpc_pb.GetInfoRequest)) {
     throw new Error('Expected argument of type lnrpc.GetInfoRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_GetInfoRequest(buffer_arg) {
-  return lnrpc_pb.GetInfoRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.GetInfoRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_GetInfoResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.GetInfoResponse)) {
+  if (!(arg instanceof rpc_pb.GetInfoResponse)) {
     throw new Error('Expected argument of type lnrpc.GetInfoResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_GetInfoResponse(buffer_arg) {
-  return lnrpc_pb.GetInfoResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.GetInfoResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_GetTransactionsRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.GetTransactionsRequest)) {
+  if (!(arg instanceof rpc_pb.GetTransactionsRequest)) {
     throw new Error('Expected argument of type lnrpc.GetTransactionsRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_GetTransactionsRequest(buffer_arg) {
-  return lnrpc_pb.GetTransactionsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.GetTransactionsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_GraphTopologySubscription(arg) {
-  if (!(arg instanceof lnrpc_pb.GraphTopologySubscription)) {
+  if (!(arg instanceof rpc_pb.GraphTopologySubscription)) {
     throw new Error('Expected argument of type lnrpc.GraphTopologySubscription');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_GraphTopologySubscription(buffer_arg) {
-  return lnrpc_pb.GraphTopologySubscription.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.GraphTopologySubscription.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_GraphTopologyUpdate(arg) {
-  if (!(arg instanceof lnrpc_pb.GraphTopologyUpdate)) {
+  if (!(arg instanceof rpc_pb.GraphTopologyUpdate)) {
     throw new Error('Expected argument of type lnrpc.GraphTopologyUpdate');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_GraphTopologyUpdate(buffer_arg) {
-  return lnrpc_pb.GraphTopologyUpdate.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.GraphTopologyUpdate.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_InitWalletRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.InitWalletRequest)) {
+  if (!(arg instanceof rpc_pb.InitWalletRequest)) {
     throw new Error('Expected argument of type lnrpc.InitWalletRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_InitWalletRequest(buffer_arg) {
-  return lnrpc_pb.InitWalletRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.InitWalletRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_InitWalletResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.InitWalletResponse)) {
+  if (!(arg instanceof rpc_pb.InitWalletResponse)) {
     throw new Error('Expected argument of type lnrpc.InitWalletResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_InitWalletResponse(buffer_arg) {
-  return lnrpc_pb.InitWalletResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.InitWalletResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_Invoice(arg) {
-  if (!(arg instanceof lnrpc_pb.Invoice)) {
+  if (!(arg instanceof rpc_pb.Invoice)) {
     throw new Error('Expected argument of type lnrpc.Invoice');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_Invoice(buffer_arg) {
-  return lnrpc_pb.Invoice.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.Invoice.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_InvoiceSubscription(arg) {
-  if (!(arg instanceof lnrpc_pb.InvoiceSubscription)) {
+  if (!(arg instanceof rpc_pb.InvoiceSubscription)) {
     throw new Error('Expected argument of type lnrpc.InvoiceSubscription');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_InvoiceSubscription(buffer_arg) {
-  return lnrpc_pb.InvoiceSubscription.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.InvoiceSubscription.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ListChannelsRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ListChannelsRequest)) {
+  if (!(arg instanceof rpc_pb.ListChannelsRequest)) {
     throw new Error('Expected argument of type lnrpc.ListChannelsRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ListChannelsRequest(buffer_arg) {
-  return lnrpc_pb.ListChannelsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ListChannelsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ListChannelsResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.ListChannelsResponse)) {
+  if (!(arg instanceof rpc_pb.ListChannelsResponse)) {
     throw new Error('Expected argument of type lnrpc.ListChannelsResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ListChannelsResponse(buffer_arg) {
-  return lnrpc_pb.ListChannelsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ListChannelsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ListInvoiceRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ListInvoiceRequest)) {
+  if (!(arg instanceof rpc_pb.ListInvoiceRequest)) {
     throw new Error('Expected argument of type lnrpc.ListInvoiceRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ListInvoiceRequest(buffer_arg) {
-  return lnrpc_pb.ListInvoiceRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ListInvoiceRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ListInvoiceResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.ListInvoiceResponse)) {
+  if (!(arg instanceof rpc_pb.ListInvoiceResponse)) {
     throw new Error('Expected argument of type lnrpc.ListInvoiceResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ListInvoiceResponse(buffer_arg) {
-  return lnrpc_pb.ListInvoiceResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ListInvoiceResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ListPaymentsRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ListPaymentsRequest)) {
+  if (!(arg instanceof rpc_pb.ListPaymentsRequest)) {
     throw new Error('Expected argument of type lnrpc.ListPaymentsRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ListPaymentsRequest(buffer_arg) {
-  return lnrpc_pb.ListPaymentsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ListPaymentsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ListPaymentsResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.ListPaymentsResponse)) {
+  if (!(arg instanceof rpc_pb.ListPaymentsResponse)) {
     throw new Error('Expected argument of type lnrpc.ListPaymentsResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ListPaymentsResponse(buffer_arg) {
-  return lnrpc_pb.ListPaymentsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ListPaymentsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ListPeersRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ListPeersRequest)) {
+  if (!(arg instanceof rpc_pb.ListPeersRequest)) {
     throw new Error('Expected argument of type lnrpc.ListPeersRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ListPeersRequest(buffer_arg) {
-  return lnrpc_pb.ListPeersRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ListPeersRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ListPeersResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.ListPeersResponse)) {
+  if (!(arg instanceof rpc_pb.ListPeersResponse)) {
     throw new Error('Expected argument of type lnrpc.ListPeersResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ListPeersResponse(buffer_arg) {
-  return lnrpc_pb.ListPeersResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ListPeersResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ListUnspentRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.ListUnspentRequest)) {
+  if (!(arg instanceof rpc_pb.ListUnspentRequest)) {
     throw new Error('Expected argument of type lnrpc.ListUnspentRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ListUnspentRequest(buffer_arg) {
-  return lnrpc_pb.ListUnspentRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ListUnspentRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_ListUnspentResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.ListUnspentResponse)) {
+  if (!(arg instanceof rpc_pb.ListUnspentResponse)) {
     throw new Error('Expected argument of type lnrpc.ListUnspentResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_ListUnspentResponse(buffer_arg) {
-  return lnrpc_pb.ListUnspentResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.ListUnspentResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_NetworkInfo(arg) {
-  if (!(arg instanceof lnrpc_pb.NetworkInfo)) {
+  if (!(arg instanceof rpc_pb.NetworkInfo)) {
     throw new Error('Expected argument of type lnrpc.NetworkInfo');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_NetworkInfo(buffer_arg) {
-  return lnrpc_pb.NetworkInfo.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.NetworkInfo.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_NetworkInfoRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.NetworkInfoRequest)) {
+  if (!(arg instanceof rpc_pb.NetworkInfoRequest)) {
     throw new Error('Expected argument of type lnrpc.NetworkInfoRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_NetworkInfoRequest(buffer_arg) {
-  return lnrpc_pb.NetworkInfoRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.NetworkInfoRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_NewAddressRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.NewAddressRequest)) {
+  if (!(arg instanceof rpc_pb.NewAddressRequest)) {
     throw new Error('Expected argument of type lnrpc.NewAddressRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_NewAddressRequest(buffer_arg) {
-  return lnrpc_pb.NewAddressRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.NewAddressRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_NewAddressResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.NewAddressResponse)) {
+  if (!(arg instanceof rpc_pb.NewAddressResponse)) {
     throw new Error('Expected argument of type lnrpc.NewAddressResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_NewAddressResponse(buffer_arg) {
-  return lnrpc_pb.NewAddressResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.NewAddressResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_NodeInfo(arg) {
-  if (!(arg instanceof lnrpc_pb.NodeInfo)) {
+  if (!(arg instanceof rpc_pb.NodeInfo)) {
     throw new Error('Expected argument of type lnrpc.NodeInfo');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_NodeInfo(buffer_arg) {
-  return lnrpc_pb.NodeInfo.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.NodeInfo.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_NodeInfoRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.NodeInfoRequest)) {
+  if (!(arg instanceof rpc_pb.NodeInfoRequest)) {
     throw new Error('Expected argument of type lnrpc.NodeInfoRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_NodeInfoRequest(buffer_arg) {
-  return lnrpc_pb.NodeInfoRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.NodeInfoRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_OpenChannelRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.OpenChannelRequest)) {
+  if (!(arg instanceof rpc_pb.OpenChannelRequest)) {
     throw new Error('Expected argument of type lnrpc.OpenChannelRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_OpenChannelRequest(buffer_arg) {
-  return lnrpc_pb.OpenChannelRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.OpenChannelRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_OpenStatusUpdate(arg) {
-  if (!(arg instanceof lnrpc_pb.OpenStatusUpdate)) {
+  if (!(arg instanceof rpc_pb.OpenStatusUpdate)) {
     throw new Error('Expected argument of type lnrpc.OpenStatusUpdate');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_OpenStatusUpdate(buffer_arg) {
-  return lnrpc_pb.OpenStatusUpdate.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.OpenStatusUpdate.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_PayReq(arg) {
-  if (!(arg instanceof lnrpc_pb.PayReq)) {
+  if (!(arg instanceof rpc_pb.PayReq)) {
     throw new Error('Expected argument of type lnrpc.PayReq');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_PayReq(buffer_arg) {
-  return lnrpc_pb.PayReq.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.PayReq.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_PayReqString(arg) {
-  if (!(arg instanceof lnrpc_pb.PayReqString)) {
+  if (!(arg instanceof rpc_pb.PayReqString)) {
     throw new Error('Expected argument of type lnrpc.PayReqString');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_PayReqString(buffer_arg) {
-  return lnrpc_pb.PayReqString.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.PayReqString.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_PaymentHash(arg) {
-  if (!(arg instanceof lnrpc_pb.PaymentHash)) {
+  if (!(arg instanceof rpc_pb.PaymentHash)) {
     throw new Error('Expected argument of type lnrpc.PaymentHash');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_PaymentHash(buffer_arg) {
-  return lnrpc_pb.PaymentHash.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.PaymentHash.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_PendingChannelsRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.PendingChannelsRequest)) {
+  if (!(arg instanceof rpc_pb.PendingChannelsRequest)) {
     throw new Error('Expected argument of type lnrpc.PendingChannelsRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_PendingChannelsRequest(buffer_arg) {
-  return lnrpc_pb.PendingChannelsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.PendingChannelsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_PendingChannelsResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.PendingChannelsResponse)) {
+  if (!(arg instanceof rpc_pb.PendingChannelsResponse)) {
     throw new Error('Expected argument of type lnrpc.PendingChannelsResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_PendingChannelsResponse(buffer_arg) {
-  return lnrpc_pb.PendingChannelsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.PendingChannelsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_PolicyUpdateRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.PolicyUpdateRequest)) {
+  if (!(arg instanceof rpc_pb.PolicyUpdateRequest)) {
     throw new Error('Expected argument of type lnrpc.PolicyUpdateRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_PolicyUpdateRequest(buffer_arg) {
-  return lnrpc_pb.PolicyUpdateRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.PolicyUpdateRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_PolicyUpdateResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.PolicyUpdateResponse)) {
+  if (!(arg instanceof rpc_pb.PolicyUpdateResponse)) {
     throw new Error('Expected argument of type lnrpc.PolicyUpdateResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_PolicyUpdateResponse(buffer_arg) {
-  return lnrpc_pb.PolicyUpdateResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.PolicyUpdateResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_QueryRoutesRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.QueryRoutesRequest)) {
+  if (!(arg instanceof rpc_pb.QueryRoutesRequest)) {
     throw new Error('Expected argument of type lnrpc.QueryRoutesRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_QueryRoutesRequest(buffer_arg) {
-  return lnrpc_pb.QueryRoutesRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.QueryRoutesRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_QueryRoutesResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.QueryRoutesResponse)) {
+  if (!(arg instanceof rpc_pb.QueryRoutesResponse)) {
     throw new Error('Expected argument of type lnrpc.QueryRoutesResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_QueryRoutesResponse(buffer_arg) {
-  return lnrpc_pb.QueryRoutesResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.QueryRoutesResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_RestoreBackupResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.RestoreBackupResponse)) {
+  if (!(arg instanceof rpc_pb.RestoreBackupResponse)) {
     throw new Error('Expected argument of type lnrpc.RestoreBackupResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_RestoreBackupResponse(buffer_arg) {
-  return lnrpc_pb.RestoreBackupResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.RestoreBackupResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_RestoreChanBackupRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.RestoreChanBackupRequest)) {
+  if (!(arg instanceof rpc_pb.RestoreChanBackupRequest)) {
     throw new Error('Expected argument of type lnrpc.RestoreChanBackupRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_RestoreChanBackupRequest(buffer_arg) {
-  return lnrpc_pb.RestoreChanBackupRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.RestoreChanBackupRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_SendCoinsRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.SendCoinsRequest)) {
+  if (!(arg instanceof rpc_pb.SendCoinsRequest)) {
     throw new Error('Expected argument of type lnrpc.SendCoinsRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_SendCoinsRequest(buffer_arg) {
-  return lnrpc_pb.SendCoinsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.SendCoinsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_SendCoinsResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.SendCoinsResponse)) {
+  if (!(arg instanceof rpc_pb.SendCoinsResponse)) {
     throw new Error('Expected argument of type lnrpc.SendCoinsResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_SendCoinsResponse(buffer_arg) {
-  return lnrpc_pb.SendCoinsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.SendCoinsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_SendManyRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.SendManyRequest)) {
+  if (!(arg instanceof rpc_pb.SendManyRequest)) {
     throw new Error('Expected argument of type lnrpc.SendManyRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_SendManyRequest(buffer_arg) {
-  return lnrpc_pb.SendManyRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.SendManyRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_SendManyResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.SendManyResponse)) {
+  if (!(arg instanceof rpc_pb.SendManyResponse)) {
     throw new Error('Expected argument of type lnrpc.SendManyResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_SendManyResponse(buffer_arg) {
-  return lnrpc_pb.SendManyResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.SendManyResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_SendRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.SendRequest)) {
+  if (!(arg instanceof rpc_pb.SendRequest)) {
     throw new Error('Expected argument of type lnrpc.SendRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_SendRequest(buffer_arg) {
-  return lnrpc_pb.SendRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.SendRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_SendResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.SendResponse)) {
+  if (!(arg instanceof rpc_pb.SendResponse)) {
     throw new Error('Expected argument of type lnrpc.SendResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_SendResponse(buffer_arg) {
-  return lnrpc_pb.SendResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.SendResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_SendToRouteRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.SendToRouteRequest)) {
+  if (!(arg instanceof rpc_pb.SendToRouteRequest)) {
     throw new Error('Expected argument of type lnrpc.SendToRouteRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_SendToRouteRequest(buffer_arg) {
-  return lnrpc_pb.SendToRouteRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.SendToRouteRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_SignMessageRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.SignMessageRequest)) {
+  if (!(arg instanceof rpc_pb.SignMessageRequest)) {
     throw new Error('Expected argument of type lnrpc.SignMessageRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_SignMessageRequest(buffer_arg) {
-  return lnrpc_pb.SignMessageRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.SignMessageRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_SignMessageResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.SignMessageResponse)) {
+  if (!(arg instanceof rpc_pb.SignMessageResponse)) {
     throw new Error('Expected argument of type lnrpc.SignMessageResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_SignMessageResponse(buffer_arg) {
-  return lnrpc_pb.SignMessageResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.SignMessageResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_StopRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.StopRequest)) {
+  if (!(arg instanceof rpc_pb.StopRequest)) {
     throw new Error('Expected argument of type lnrpc.StopRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_StopRequest(buffer_arg) {
-  return lnrpc_pb.StopRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.StopRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_StopResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.StopResponse)) {
+  if (!(arg instanceof rpc_pb.StopResponse)) {
     throw new Error('Expected argument of type lnrpc.StopResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_StopResponse(buffer_arg) {
-  return lnrpc_pb.StopResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.StopResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_Transaction(arg) {
-  if (!(arg instanceof lnrpc_pb.Transaction)) {
+  if (!(arg instanceof rpc_pb.Transaction)) {
     throw new Error('Expected argument of type lnrpc.Transaction');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_Transaction(buffer_arg) {
-  return lnrpc_pb.Transaction.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.Transaction.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_TransactionDetails(arg) {
-  if (!(arg instanceof lnrpc_pb.TransactionDetails)) {
+  if (!(arg instanceof rpc_pb.TransactionDetails)) {
     throw new Error('Expected argument of type lnrpc.TransactionDetails');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_TransactionDetails(buffer_arg) {
-  return lnrpc_pb.TransactionDetails.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.TransactionDetails.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_UnlockWalletRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.UnlockWalletRequest)) {
+  if (!(arg instanceof rpc_pb.UnlockWalletRequest)) {
     throw new Error('Expected argument of type lnrpc.UnlockWalletRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_UnlockWalletRequest(buffer_arg) {
-  return lnrpc_pb.UnlockWalletRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.UnlockWalletRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_UnlockWalletResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.UnlockWalletResponse)) {
+  if (!(arg instanceof rpc_pb.UnlockWalletResponse)) {
     throw new Error('Expected argument of type lnrpc.UnlockWalletResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_UnlockWalletResponse(buffer_arg) {
-  return lnrpc_pb.UnlockWalletResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.UnlockWalletResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_VerifyChanBackupResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.VerifyChanBackupResponse)) {
+  if (!(arg instanceof rpc_pb.VerifyChanBackupResponse)) {
     throw new Error('Expected argument of type lnrpc.VerifyChanBackupResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_VerifyChanBackupResponse(buffer_arg) {
-  return lnrpc_pb.VerifyChanBackupResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.VerifyChanBackupResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_VerifyMessageRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.VerifyMessageRequest)) {
+  if (!(arg instanceof rpc_pb.VerifyMessageRequest)) {
     throw new Error('Expected argument of type lnrpc.VerifyMessageRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_VerifyMessageRequest(buffer_arg) {
-  return lnrpc_pb.VerifyMessageRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.VerifyMessageRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_VerifyMessageResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.VerifyMessageResponse)) {
+  if (!(arg instanceof rpc_pb.VerifyMessageResponse)) {
     throw new Error('Expected argument of type lnrpc.VerifyMessageResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_VerifyMessageResponse(buffer_arg) {
-  return lnrpc_pb.VerifyMessageResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.VerifyMessageResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_WalletBalanceRequest(arg) {
-  if (!(arg instanceof lnrpc_pb.WalletBalanceRequest)) {
+  if (!(arg instanceof rpc_pb.WalletBalanceRequest)) {
     throw new Error('Expected argument of type lnrpc.WalletBalanceRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_WalletBalanceRequest(buffer_arg) {
-  return lnrpc_pb.WalletBalanceRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.WalletBalanceRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_lnrpc_WalletBalanceResponse(arg) {
-  if (!(arg instanceof lnrpc_pb.WalletBalanceResponse)) {
+  if (!(arg instanceof rpc_pb.WalletBalanceResponse)) {
     throw new Error('Expected argument of type lnrpc.WalletBalanceResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_lnrpc_WalletBalanceResponse(buffer_arg) {
-  return lnrpc_pb.WalletBalanceResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return rpc_pb.WalletBalanceResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 
@@ -1110,8 +1110,8 @@ var WalletUnlockerService = exports.WalletUnlockerService = {
     path: '/lnrpc.WalletUnlocker/GenSeed',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.GenSeedRequest,
-    responseType: lnrpc_pb.GenSeedResponse,
+    requestType: rpc_pb.GenSeedRequest,
+    responseType: rpc_pb.GenSeedResponse,
     requestSerialize: serialize_lnrpc_GenSeedRequest,
     requestDeserialize: deserialize_lnrpc_GenSeedRequest,
     responseSerialize: serialize_lnrpc_GenSeedResponse,
@@ -1134,8 +1134,8 @@ var WalletUnlockerService = exports.WalletUnlockerService = {
     path: '/lnrpc.WalletUnlocker/InitWallet',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.InitWalletRequest,
-    responseType: lnrpc_pb.InitWalletResponse,
+    requestType: rpc_pb.InitWalletRequest,
+    responseType: rpc_pb.InitWalletResponse,
     requestSerialize: serialize_lnrpc_InitWalletRequest,
     requestDeserialize: deserialize_lnrpc_InitWalletRequest,
     responseSerialize: serialize_lnrpc_InitWalletResponse,
@@ -1148,8 +1148,8 @@ var WalletUnlockerService = exports.WalletUnlockerService = {
     path: '/lnrpc.WalletUnlocker/UnlockWallet',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.UnlockWalletRequest,
-    responseType: lnrpc_pb.UnlockWalletResponse,
+    requestType: rpc_pb.UnlockWalletRequest,
+    responseType: rpc_pb.UnlockWalletResponse,
     requestSerialize: serialize_lnrpc_UnlockWalletRequest,
     requestDeserialize: deserialize_lnrpc_UnlockWalletRequest,
     responseSerialize: serialize_lnrpc_UnlockWalletResponse,
@@ -1162,8 +1162,8 @@ var WalletUnlockerService = exports.WalletUnlockerService = {
     path: '/lnrpc.WalletUnlocker/ChangePassword',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ChangePasswordRequest,
-    responseType: lnrpc_pb.ChangePasswordResponse,
+    requestType: rpc_pb.ChangePasswordRequest,
+    responseType: rpc_pb.ChangePasswordResponse,
     requestSerialize: serialize_lnrpc_ChangePasswordRequest,
     requestDeserialize: deserialize_lnrpc_ChangePasswordRequest,
     responseSerialize: serialize_lnrpc_ChangePasswordResponse,
@@ -1181,8 +1181,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/WalletBalance',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.WalletBalanceRequest,
-    responseType: lnrpc_pb.WalletBalanceResponse,
+    requestType: rpc_pb.WalletBalanceRequest,
+    responseType: rpc_pb.WalletBalanceResponse,
     requestSerialize: serialize_lnrpc_WalletBalanceRequest,
     requestDeserialize: deserialize_lnrpc_WalletBalanceRequest,
     responseSerialize: serialize_lnrpc_WalletBalanceResponse,
@@ -1195,8 +1195,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/ChannelBalance',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ChannelBalanceRequest,
-    responseType: lnrpc_pb.ChannelBalanceResponse,
+    requestType: rpc_pb.ChannelBalanceRequest,
+    responseType: rpc_pb.ChannelBalanceResponse,
     requestSerialize: serialize_lnrpc_ChannelBalanceRequest,
     requestDeserialize: deserialize_lnrpc_ChannelBalanceRequest,
     responseSerialize: serialize_lnrpc_ChannelBalanceResponse,
@@ -1209,8 +1209,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/GetTransactions',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.GetTransactionsRequest,
-    responseType: lnrpc_pb.TransactionDetails,
+    requestType: rpc_pb.GetTransactionsRequest,
+    responseType: rpc_pb.TransactionDetails,
     requestSerialize: serialize_lnrpc_GetTransactionsRequest,
     requestDeserialize: deserialize_lnrpc_GetTransactionsRequest,
     responseSerialize: serialize_lnrpc_TransactionDetails,
@@ -1223,8 +1223,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/EstimateFee',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.EstimateFeeRequest,
-    responseType: lnrpc_pb.EstimateFeeResponse,
+    requestType: rpc_pb.EstimateFeeRequest,
+    responseType: rpc_pb.EstimateFeeResponse,
     requestSerialize: serialize_lnrpc_EstimateFeeRequest,
     requestDeserialize: deserialize_lnrpc_EstimateFeeRequest,
     responseSerialize: serialize_lnrpc_EstimateFeeResponse,
@@ -1240,8 +1240,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SendCoins',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.SendCoinsRequest,
-    responseType: lnrpc_pb.SendCoinsResponse,
+    requestType: rpc_pb.SendCoinsRequest,
+    responseType: rpc_pb.SendCoinsResponse,
     requestSerialize: serialize_lnrpc_SendCoinsRequest,
     requestDeserialize: deserialize_lnrpc_SendCoinsRequest,
     responseSerialize: serialize_lnrpc_SendCoinsResponse,
@@ -1254,8 +1254,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/ListUnspent',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ListUnspentRequest,
-    responseType: lnrpc_pb.ListUnspentResponse,
+    requestType: rpc_pb.ListUnspentRequest,
+    responseType: rpc_pb.ListUnspentResponse,
     requestSerialize: serialize_lnrpc_ListUnspentRequest,
     requestDeserialize: deserialize_lnrpc_ListUnspentRequest,
     responseSerialize: serialize_lnrpc_ListUnspentResponse,
@@ -1269,8 +1269,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SubscribeTransactions',
     requestStream: false,
     responseStream: true,
-    requestType: lnrpc_pb.GetTransactionsRequest,
-    responseType: lnrpc_pb.Transaction,
+    requestType: rpc_pb.GetTransactionsRequest,
+    responseType: rpc_pb.Transaction,
     requestSerialize: serialize_lnrpc_GetTransactionsRequest,
     requestDeserialize: deserialize_lnrpc_GetTransactionsRequest,
     responseSerialize: serialize_lnrpc_Transaction,
@@ -1285,8 +1285,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SendMany',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.SendManyRequest,
-    responseType: lnrpc_pb.SendManyResponse,
+    requestType: rpc_pb.SendManyRequest,
+    responseType: rpc_pb.SendManyResponse,
     requestSerialize: serialize_lnrpc_SendManyRequest,
     requestDeserialize: deserialize_lnrpc_SendManyRequest,
     responseSerialize: serialize_lnrpc_SendManyResponse,
@@ -1298,8 +1298,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/NewAddress',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.NewAddressRequest,
-    responseType: lnrpc_pb.NewAddressResponse,
+    requestType: rpc_pb.NewAddressRequest,
+    responseType: rpc_pb.NewAddressResponse,
     requestSerialize: serialize_lnrpc_NewAddressRequest,
     requestDeserialize: deserialize_lnrpc_NewAddressRequest,
     responseSerialize: serialize_lnrpc_NewAddressResponse,
@@ -1313,8 +1313,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SignMessage',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.SignMessageRequest,
-    responseType: lnrpc_pb.SignMessageResponse,
+    requestType: rpc_pb.SignMessageRequest,
+    responseType: rpc_pb.SignMessageResponse,
     requestSerialize: serialize_lnrpc_SignMessageRequest,
     requestDeserialize: deserialize_lnrpc_SignMessageRequest,
     responseSerialize: serialize_lnrpc_SignMessageResponse,
@@ -1329,8 +1329,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/VerifyMessage',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.VerifyMessageRequest,
-    responseType: lnrpc_pb.VerifyMessageResponse,
+    requestType: rpc_pb.VerifyMessageRequest,
+    responseType: rpc_pb.VerifyMessageResponse,
     requestSerialize: serialize_lnrpc_VerifyMessageRequest,
     requestDeserialize: deserialize_lnrpc_VerifyMessageRequest,
     responseSerialize: serialize_lnrpc_VerifyMessageResponse,
@@ -1344,8 +1344,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/ConnectPeer',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ConnectPeerRequest,
-    responseType: lnrpc_pb.ConnectPeerResponse,
+    requestType: rpc_pb.ConnectPeerRequest,
+    responseType: rpc_pb.ConnectPeerResponse,
     requestSerialize: serialize_lnrpc_ConnectPeerRequest,
     requestDeserialize: deserialize_lnrpc_ConnectPeerRequest,
     responseSerialize: serialize_lnrpc_ConnectPeerResponse,
@@ -1359,8 +1359,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/DisconnectPeer',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.DisconnectPeerRequest,
-    responseType: lnrpc_pb.DisconnectPeerResponse,
+    requestType: rpc_pb.DisconnectPeerRequest,
+    responseType: rpc_pb.DisconnectPeerResponse,
     requestSerialize: serialize_lnrpc_DisconnectPeerRequest,
     requestDeserialize: deserialize_lnrpc_DisconnectPeerRequest,
     responseSerialize: serialize_lnrpc_DisconnectPeerResponse,
@@ -1372,8 +1372,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/ListPeers',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ListPeersRequest,
-    responseType: lnrpc_pb.ListPeersResponse,
+    requestType: rpc_pb.ListPeersRequest,
+    responseType: rpc_pb.ListPeersResponse,
     requestSerialize: serialize_lnrpc_ListPeersRequest,
     requestDeserialize: deserialize_lnrpc_ListPeersRequest,
     responseSerialize: serialize_lnrpc_ListPeersResponse,
@@ -1387,8 +1387,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/GetInfo',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.GetInfoRequest,
-    responseType: lnrpc_pb.GetInfoResponse,
+    requestType: rpc_pb.GetInfoRequest,
+    responseType: rpc_pb.GetInfoResponse,
     requestSerialize: serialize_lnrpc_GetInfoRequest,
     requestDeserialize: deserialize_lnrpc_GetInfoRequest,
     responseSerialize: serialize_lnrpc_GetInfoResponse,
@@ -1405,8 +1405,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/PendingChannels',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.PendingChannelsRequest,
-    responseType: lnrpc_pb.PendingChannelsResponse,
+    requestType: rpc_pb.PendingChannelsRequest,
+    responseType: rpc_pb.PendingChannelsResponse,
     requestSerialize: serialize_lnrpc_PendingChannelsRequest,
     requestDeserialize: deserialize_lnrpc_PendingChannelsRequest,
     responseSerialize: serialize_lnrpc_PendingChannelsResponse,
@@ -1419,8 +1419,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/ListChannels',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ListChannelsRequest,
-    responseType: lnrpc_pb.ListChannelsResponse,
+    requestType: rpc_pb.ListChannelsRequest,
+    responseType: rpc_pb.ListChannelsResponse,
     requestSerialize: serialize_lnrpc_ListChannelsRequest,
     requestDeserialize: deserialize_lnrpc_ListChannelsRequest,
     responseSerialize: serialize_lnrpc_ListChannelsResponse,
@@ -1435,8 +1435,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SubscribeChannelEvents',
     requestStream: false,
     responseStream: true,
-    requestType: lnrpc_pb.ChannelEventSubscription,
-    responseType: lnrpc_pb.ChannelEventUpdate,
+    requestType: rpc_pb.ChannelEventSubscription,
+    responseType: rpc_pb.ChannelEventUpdate,
     requestSerialize: serialize_lnrpc_ChannelEventSubscription,
     requestDeserialize: deserialize_lnrpc_ChannelEventSubscription,
     responseSerialize: serialize_lnrpc_ChannelEventUpdate,
@@ -1449,8 +1449,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/ClosedChannels',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ClosedChannelsRequest,
-    responseType: lnrpc_pb.ClosedChannelsResponse,
+    requestType: rpc_pb.ClosedChannelsRequest,
+    responseType: rpc_pb.ClosedChannelsResponse,
     requestSerialize: serialize_lnrpc_ClosedChannelsRequest,
     requestDeserialize: deserialize_lnrpc_ClosedChannelsRequest,
     responseSerialize: serialize_lnrpc_ClosedChannelsResponse,
@@ -1465,8 +1465,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/OpenChannelSync',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.OpenChannelRequest,
-    responseType: lnrpc_pb.ChannelPoint,
+    requestType: rpc_pb.OpenChannelRequest,
+    responseType: rpc_pb.ChannelPoint,
     requestSerialize: serialize_lnrpc_OpenChannelRequest,
     requestDeserialize: deserialize_lnrpc_OpenChannelRequest,
     responseSerialize: serialize_lnrpc_ChannelPoint,
@@ -1482,8 +1482,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/OpenChannel',
     requestStream: false,
     responseStream: true,
-    requestType: lnrpc_pb.OpenChannelRequest,
-    responseType: lnrpc_pb.OpenStatusUpdate,
+    requestType: rpc_pb.OpenChannelRequest,
+    responseType: rpc_pb.OpenStatusUpdate,
     requestSerialize: serialize_lnrpc_OpenChannelRequest,
     requestDeserialize: deserialize_lnrpc_OpenChannelRequest,
     responseSerialize: serialize_lnrpc_OpenStatusUpdate,
@@ -1501,8 +1501,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/CloseChannel',
     requestStream: false,
     responseStream: true,
-    requestType: lnrpc_pb.CloseChannelRequest,
-    responseType: lnrpc_pb.CloseStatusUpdate,
+    requestType: rpc_pb.CloseChannelRequest,
+    responseType: rpc_pb.CloseStatusUpdate,
     requestSerialize: serialize_lnrpc_CloseChannelRequest,
     requestDeserialize: deserialize_lnrpc_CloseChannelRequest,
     responseSerialize: serialize_lnrpc_CloseStatusUpdate,
@@ -1517,8 +1517,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/AbandonChannel',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.AbandonChannelRequest,
-    responseType: lnrpc_pb.AbandonChannelResponse,
+    requestType: rpc_pb.AbandonChannelRequest,
+    responseType: rpc_pb.AbandonChannelResponse,
     requestSerialize: serialize_lnrpc_AbandonChannelRequest,
     requestDeserialize: deserialize_lnrpc_AbandonChannelRequest,
     responseSerialize: serialize_lnrpc_AbandonChannelResponse,
@@ -1533,8 +1533,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SendPayment',
     requestStream: true,
     responseStream: true,
-    requestType: lnrpc_pb.SendRequest,
-    responseType: lnrpc_pb.SendResponse,
+    requestType: rpc_pb.SendRequest,
+    responseType: rpc_pb.SendResponse,
     requestSerialize: serialize_lnrpc_SendRequest,
     requestDeserialize: deserialize_lnrpc_SendRequest,
     responseSerialize: serialize_lnrpc_SendResponse,
@@ -1549,8 +1549,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SendPaymentSync',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.SendRequest,
-    responseType: lnrpc_pb.SendResponse,
+    requestType: rpc_pb.SendRequest,
+    responseType: rpc_pb.SendResponse,
     requestSerialize: serialize_lnrpc_SendRequest,
     requestDeserialize: deserialize_lnrpc_SendRequest,
     responseSerialize: serialize_lnrpc_SendResponse,
@@ -1565,8 +1565,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SendToRoute',
     requestStream: true,
     responseStream: true,
-    requestType: lnrpc_pb.SendToRouteRequest,
-    responseType: lnrpc_pb.SendResponse,
+    requestType: rpc_pb.SendToRouteRequest,
+    responseType: rpc_pb.SendResponse,
     requestSerialize: serialize_lnrpc_SendToRouteRequest,
     requestDeserialize: deserialize_lnrpc_SendToRouteRequest,
     responseSerialize: serialize_lnrpc_SendResponse,
@@ -1579,8 +1579,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SendToRouteSync',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.SendToRouteRequest,
-    responseType: lnrpc_pb.SendResponse,
+    requestType: rpc_pb.SendToRouteRequest,
+    responseType: rpc_pb.SendResponse,
     requestSerialize: serialize_lnrpc_SendToRouteRequest,
     requestDeserialize: deserialize_lnrpc_SendToRouteRequest,
     responseSerialize: serialize_lnrpc_SendResponse,
@@ -1594,8 +1594,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/AddInvoice',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.Invoice,
-    responseType: lnrpc_pb.AddInvoiceResponse,
+    requestType: rpc_pb.Invoice,
+    responseType: rpc_pb.AddInvoiceResponse,
     requestSerialize: serialize_lnrpc_Invoice,
     requestDeserialize: deserialize_lnrpc_Invoice,
     responseSerialize: serialize_lnrpc_AddInvoiceResponse,
@@ -1613,8 +1613,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/ListInvoices',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ListInvoiceRequest,
-    responseType: lnrpc_pb.ListInvoiceResponse,
+    requestType: rpc_pb.ListInvoiceRequest,
+    responseType: rpc_pb.ListInvoiceResponse,
     requestSerialize: serialize_lnrpc_ListInvoiceRequest,
     requestDeserialize: deserialize_lnrpc_ListInvoiceRequest,
     responseSerialize: serialize_lnrpc_ListInvoiceResponse,
@@ -1628,8 +1628,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/LookupInvoice',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.PaymentHash,
-    responseType: lnrpc_pb.Invoice,
+    requestType: rpc_pb.PaymentHash,
+    responseType: rpc_pb.Invoice,
     requestSerialize: serialize_lnrpc_PaymentHash,
     requestDeserialize: deserialize_lnrpc_PaymentHash,
     responseSerialize: serialize_lnrpc_Invoice,
@@ -1649,8 +1649,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SubscribeInvoices',
     requestStream: false,
     responseStream: true,
-    requestType: lnrpc_pb.InvoiceSubscription,
-    responseType: lnrpc_pb.Invoice,
+    requestType: rpc_pb.InvoiceSubscription,
+    responseType: rpc_pb.Invoice,
     requestSerialize: serialize_lnrpc_InvoiceSubscription,
     requestDeserialize: deserialize_lnrpc_InvoiceSubscription,
     responseSerialize: serialize_lnrpc_Invoice,
@@ -1664,8 +1664,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/DecodePayReq',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.PayReqString,
-    responseType: lnrpc_pb.PayReq,
+    requestType: rpc_pb.PayReqString,
+    responseType: rpc_pb.PayReq,
     requestSerialize: serialize_lnrpc_PayReqString,
     requestDeserialize: deserialize_lnrpc_PayReqString,
     responseSerialize: serialize_lnrpc_PayReq,
@@ -1677,8 +1677,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/ListPayments',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ListPaymentsRequest,
-    responseType: lnrpc_pb.ListPaymentsResponse,
+    requestType: rpc_pb.ListPaymentsRequest,
+    responseType: rpc_pb.ListPaymentsResponse,
     requestSerialize: serialize_lnrpc_ListPaymentsRequest,
     requestDeserialize: deserialize_lnrpc_ListPaymentsRequest,
     responseSerialize: serialize_lnrpc_ListPaymentsResponse,
@@ -1690,8 +1690,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/DeleteAllPayments',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.DeleteAllPaymentsRequest,
-    responseType: lnrpc_pb.DeleteAllPaymentsResponse,
+    requestType: rpc_pb.DeleteAllPaymentsRequest,
+    responseType: rpc_pb.DeleteAllPaymentsResponse,
     requestSerialize: serialize_lnrpc_DeleteAllPaymentsRequest,
     requestDeserialize: deserialize_lnrpc_DeleteAllPaymentsRequest,
     responseSerialize: serialize_lnrpc_DeleteAllPaymentsResponse,
@@ -1708,8 +1708,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/DescribeGraph',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ChannelGraphRequest,
-    responseType: lnrpc_pb.ChannelGraph,
+    requestType: rpc_pb.ChannelGraphRequest,
+    responseType: rpc_pb.ChannelGraph,
     requestSerialize: serialize_lnrpc_ChannelGraphRequest,
     requestDeserialize: deserialize_lnrpc_ChannelGraphRequest,
     responseSerialize: serialize_lnrpc_ChannelGraph,
@@ -1724,8 +1724,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/GetChanInfo',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ChanInfoRequest,
-    responseType: lnrpc_pb.ChannelEdge,
+    requestType: rpc_pb.ChanInfoRequest,
+    responseType: rpc_pb.ChannelEdge,
     requestSerialize: serialize_lnrpc_ChanInfoRequest,
     requestDeserialize: deserialize_lnrpc_ChanInfoRequest,
     responseSerialize: serialize_lnrpc_ChannelEdge,
@@ -1738,8 +1738,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/GetNodeInfo',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.NodeInfoRequest,
-    responseType: lnrpc_pb.NodeInfo,
+    requestType: rpc_pb.NodeInfoRequest,
+    responseType: rpc_pb.NodeInfo,
     requestSerialize: serialize_lnrpc_NodeInfoRequest,
     requestDeserialize: deserialize_lnrpc_NodeInfoRequest,
     responseSerialize: serialize_lnrpc_NodeInfo,
@@ -1755,8 +1755,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/QueryRoutes',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.QueryRoutesRequest,
-    responseType: lnrpc_pb.QueryRoutesResponse,
+    requestType: rpc_pb.QueryRoutesRequest,
+    responseType: rpc_pb.QueryRoutesResponse,
     requestSerialize: serialize_lnrpc_QueryRoutesRequest,
     requestDeserialize: deserialize_lnrpc_QueryRoutesRequest,
     responseSerialize: serialize_lnrpc_QueryRoutesResponse,
@@ -1769,8 +1769,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/GetNetworkInfo',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.NetworkInfoRequest,
-    responseType: lnrpc_pb.NetworkInfo,
+    requestType: rpc_pb.NetworkInfoRequest,
+    responseType: rpc_pb.NetworkInfo,
     requestSerialize: serialize_lnrpc_NetworkInfoRequest,
     requestDeserialize: deserialize_lnrpc_NetworkInfoRequest,
     responseSerialize: serialize_lnrpc_NetworkInfo,
@@ -1783,8 +1783,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/StopDaemon',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.StopRequest,
-    responseType: lnrpc_pb.StopResponse,
+    requestType: rpc_pb.StopRequest,
+    responseType: rpc_pb.StopResponse,
     requestSerialize: serialize_lnrpc_StopRequest,
     requestDeserialize: deserialize_lnrpc_StopRequest,
     responseSerialize: serialize_lnrpc_StopResponse,
@@ -1801,8 +1801,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SubscribeChannelGraph',
     requestStream: false,
     responseStream: true,
-    requestType: lnrpc_pb.GraphTopologySubscription,
-    responseType: lnrpc_pb.GraphTopologyUpdate,
+    requestType: rpc_pb.GraphTopologySubscription,
+    responseType: rpc_pb.GraphTopologyUpdate,
     requestSerialize: serialize_lnrpc_GraphTopologySubscription,
     requestDeserialize: deserialize_lnrpc_GraphTopologySubscription,
     responseSerialize: serialize_lnrpc_GraphTopologyUpdate,
@@ -1817,8 +1817,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/DebugLevel',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.DebugLevelRequest,
-    responseType: lnrpc_pb.DebugLevelResponse,
+    requestType: rpc_pb.DebugLevelRequest,
+    responseType: rpc_pb.DebugLevelResponse,
     requestSerialize: serialize_lnrpc_DebugLevelRequest,
     requestDeserialize: deserialize_lnrpc_DebugLevelRequest,
     responseSerialize: serialize_lnrpc_DebugLevelResponse,
@@ -1831,8 +1831,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/FeeReport',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.FeeReportRequest,
-    responseType: lnrpc_pb.FeeReportResponse,
+    requestType: rpc_pb.FeeReportRequest,
+    responseType: rpc_pb.FeeReportResponse,
     requestSerialize: serialize_lnrpc_FeeReportRequest,
     requestDeserialize: deserialize_lnrpc_FeeReportRequest,
     responseSerialize: serialize_lnrpc_FeeReportResponse,
@@ -1845,8 +1845,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/UpdateChannelPolicy',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.PolicyUpdateRequest,
-    responseType: lnrpc_pb.PolicyUpdateResponse,
+    requestType: rpc_pb.PolicyUpdateRequest,
+    responseType: rpc_pb.PolicyUpdateResponse,
     requestSerialize: serialize_lnrpc_PolicyUpdateRequest,
     requestDeserialize: deserialize_lnrpc_PolicyUpdateRequest,
     responseSerialize: serialize_lnrpc_PolicyUpdateResponse,
@@ -1867,8 +1867,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/ForwardingHistory',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ForwardingHistoryRequest,
-    responseType: lnrpc_pb.ForwardingHistoryResponse,
+    requestType: rpc_pb.ForwardingHistoryRequest,
+    responseType: rpc_pb.ForwardingHistoryResponse,
     requestSerialize: serialize_lnrpc_ForwardingHistoryRequest,
     requestDeserialize: deserialize_lnrpc_ForwardingHistoryRequest,
     responseSerialize: serialize_lnrpc_ForwardingHistoryResponse,
@@ -1885,8 +1885,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/ExportChannelBackup',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ExportChannelBackupRequest,
-    responseType: lnrpc_pb.ChannelBackup,
+    requestType: rpc_pb.ExportChannelBackupRequest,
+    responseType: rpc_pb.ChannelBackup,
     requestSerialize: serialize_lnrpc_ExportChannelBackupRequest,
     requestDeserialize: deserialize_lnrpc_ExportChannelBackupRequest,
     responseSerialize: serialize_lnrpc_ChannelBackup,
@@ -1902,8 +1902,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/ExportAllChannelBackups',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ChanBackupExportRequest,
-    responseType: lnrpc_pb.ChanBackupSnapshot,
+    requestType: rpc_pb.ChanBackupExportRequest,
+    responseType: rpc_pb.ChanBackupSnapshot,
     requestSerialize: serialize_lnrpc_ChanBackupExportRequest,
     requestDeserialize: deserialize_lnrpc_ChanBackupExportRequest,
     responseSerialize: serialize_lnrpc_ChanBackupSnapshot,
@@ -1917,8 +1917,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/VerifyChanBackup',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.ChanBackupSnapshot,
-    responseType: lnrpc_pb.VerifyChanBackupResponse,
+    requestType: rpc_pb.ChanBackupSnapshot,
+    responseType: rpc_pb.VerifyChanBackupResponse,
     requestSerialize: serialize_lnrpc_ChanBackupSnapshot,
     requestDeserialize: deserialize_lnrpc_ChanBackupSnapshot,
     responseSerialize: serialize_lnrpc_VerifyChanBackupResponse,
@@ -1933,8 +1933,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/RestoreChannelBackups',
     requestStream: false,
     responseStream: false,
-    requestType: lnrpc_pb.RestoreChanBackupRequest,
-    responseType: lnrpc_pb.RestoreBackupResponse,
+    requestType: rpc_pb.RestoreChanBackupRequest,
+    responseType: rpc_pb.RestoreBackupResponse,
     requestSerialize: serialize_lnrpc_RestoreChanBackupRequest,
     requestDeserialize: deserialize_lnrpc_RestoreChanBackupRequest,
     responseSerialize: serialize_lnrpc_RestoreBackupResponse,
@@ -1952,8 +1952,8 @@ var LightningService = exports.LightningService = {
     path: '/lnrpc.Lightning/SubscribeChannelBackups',
     requestStream: false,
     responseStream: true,
-    requestType: lnrpc_pb.ChannelBackupSubscription,
-    responseType: lnrpc_pb.ChanBackupSnapshot,
+    requestType: rpc_pb.ChannelBackupSubscription,
+    responseType: rpc_pb.ChanBackupSnapshot,
     requestSerialize: serialize_lnrpc_ChannelBackupSubscription,
     requestDeserialize: deserialize_lnrpc_ChannelBackupSubscription,
     responseSerialize: serialize_lnrpc_ChanBackupSnapshot,
