@@ -91,14 +91,18 @@ walletUnlocker.waitForReady(Infinity, (error: Error | null) => {
 
 ## Compile from source
 
-Requirements: protoc
-
 ```bash
 git clone https://github.com/matthewlilley/lightning-rpc.git
 
 cd lightning-rpc
 
 yarn generate
+```
+
+If you'd like to generate for a different version, set the LND_VERSION environment variable.
+
+```bash
+LND_VERSION=v0.9.2-beta yarn generate
 ```
 
 ## Docs
