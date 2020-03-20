@@ -105,6 +105,10 @@ yarn generate
 
 https://matthewlilley.github.io/lightning-rpc
 
+## Secruity
+
+This is experimental. Use at your own risk. If a vulnerability is discovered, please contact hello@matthewlilley.com.
+
 ## Contributing
 
 Want to contribute? Awesome! Feel free to create an issue and/or pull request.
